@@ -21,6 +21,8 @@ namespace PM3.Model.Models
         public string AccidentStateID { get; set; }
 
         public virtual List<ChargeInsCoverage> ChargeInsCoverages { get; set; } 
+        public virtual AccidentCode AccidentCode { get; set; } 
+
 
     }
 }
