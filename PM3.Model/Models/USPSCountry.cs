@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class USPSCountry
+    public class USPSCountry
     {
         public string USPSCountryID { get; set; }
         public string Description { get; set; }

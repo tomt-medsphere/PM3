@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class Employer
+    public class Employer
     {
         public int EmployerID { get; set; }
         public string Name { get; set; }

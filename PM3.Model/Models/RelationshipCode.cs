@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class RelationshipCode
+    public class RelationshipCode
     {
         public string RelationshipCodeID { get; set; }
         public string Description { get; set; }

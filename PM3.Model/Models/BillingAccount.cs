@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class BillingAccount
+    public class BillingAccount
     {
         public int BillingAccountID { get; set; }
         public int GuarantorID { get; set; }
@@ -16,8 +16,8 @@ namespace PM3.Model.Models
         public string Description { get; set; }
         public bool Inactive { get; set; }
 
-        public virtual BillingAccountType BillingAccountType {get; set;}
         public virtual Person Guarantor { get; set; }
+        public virtual BillingAccountType BillingAccountType {get; set;}
 
     }
 }

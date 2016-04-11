@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class CARAction
+    public class CARAction
     {
         public string CARCodeID { get; set; }
         public string ShortDescription { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class Person
+    public class Person
     {
         public int PersonID { get; set; }
         public string LastName { get; set; }

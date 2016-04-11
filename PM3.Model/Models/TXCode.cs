@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class TXCode
+    public class TXCode
     {
     }
 }

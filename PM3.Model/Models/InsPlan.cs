@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class InsPlan
+    public class InsPlan
     {
         public string InsPlanID { get; set; }
         public string InsPlanGroupID { get; set; }
@@ -21,6 +21,7 @@ namespace PM3.Model.Models
         public bool Contracted { get; set; }
         public bool AcceptAssignment { get; set; }
         public string InsFormTypeID { get; set; }
+        public bool MemberNumbers { get; set; }
         public bool EDIMemberNumbers { get; set; }
         public int TimelyFilingDays { get; set; }
         public bool SubmitZeros { get; set; }
@@ -35,7 +36,6 @@ namespace PM3.Model.Models
         public string MSPTypeID { get; set; }
         public string EDICOBLevelID { get; set; }
         public bool UseHCPCSL2 { get; set; }
-        public bool MemberNumbers { get; set; }
         public bool Inactive { get; set; }
         public string Note { get; set; }
 
