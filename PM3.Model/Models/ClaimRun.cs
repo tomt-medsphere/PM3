@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class ClaimRun
+    public class ClaimRun
     {
         public int ClaimRunID { get; set; }
         public DateTime CreatedDateTime { get; set; }

@@ -21,5 +21,12 @@ namespace PM3.Model.Models
         public int ExternalPracticeSiteID { get; set; }
         public bool Inactive { get; set; }
 
+        // parents
+        public virtual Suffix Suffix { get; set; }
+        public virtual TaxonomyCode TaxonomyCode { get; set; }
+        public virtual CMSSpeciality CMSSpeciality { get; set; }
+        public virtual ExternalPractice ExternalPractice { get; set; }
+        public virtual ExternalPracticeSite ExternalPracticeSite { get; set; }
+
     }
 }

@@ -16,9 +16,8 @@ namespace PM3.Model.Models
         public string ExternalFacilityID { get; set; }
         public DateTime AdmitDateTime { get; set; }
         public DateTime DischargeDateTime { get; set; }
-        public bool Emergency { get; set; }
-        public string PWKTransmissionCode { get; set; }
-        public string PWKTypeCode { get; set; }
+        public string PWKTransmissionCodeID { get; set; }
+        public string PWKTypeCodeID { get; set; }
         public string PaperworkID { get; set; }
         // external provider
         public string RefProviderID { get; set; }
@@ -27,7 +26,9 @@ namespace PM3.Model.Models
         public DateTime PCPLastSeen { get; set; }
         public string NatureOfConditionID { get; set; }
         public DateTime LastXRay { get; set; }
+        
         // work and accident
+        public bool Emergency { get; set; }
         public bool WorkRelated { get; set; }
         public DateTime DateOfInjury { get; set; }
         public DateTime InitialTreatmentDate { get; set; }
@@ -42,22 +43,24 @@ namespace PM3.Model.Models
         public string AccidentCodeID { get; set; }
         public string AccidentStateID { get; set; }
         public DateTime AccidentDateTime { get; set; }
+      
         // misc
         public string CLIATypeID { get; set; }
         public string CLIANumber { get; set; }
         public string MammographyCert { get; set; }
-        public string PriorAuthorizationCode { get; set; }
+        public string PriorAuthCode { get; set; }
         public bool Pregnant { get; set; }
         public DateTime LMP { get; set; }
         public DateTime EDC { get; set; }
-        public string EPSDTCode { get; set; }
+        public string EPSDTCodeID { get; set; }
+     
         // system stuff
-        public int EncounterBatchID { get; set; }
-        public bool EncounterClosed { get; set; }
+        public int ChargeBatchID { get; set; }
+        public bool ChargeClosed { get; set; }
         public bool ForceToPaper { get; set; }
         public DateTime EntryDateTime { get; set; }
         public string UserID { get; set; }
-        public bool EncounterPrepped { get; set; }
+        public bool ChargePrepped { get; set; }
         public string CurrentPayerCoverageID { get; set; }
 
         // parents
@@ -66,12 +69,20 @@ namespace PM3.Model.Models
         public virtual PracticeSite PracticeSite { get; set; }
         public virtual FacilityAdmission FacilityAddmission { get; set; }
         public virtual ExternalFacility ExternalFacility { get; set; }
+        public virtual PWKTransmissionCode PWKTransmissinoCode { get; set; }
+        public virtual PWKTypeCode PWKTypeCode { get; set; }
+        public virtual ExternalProvider RefProvider { get; set; } 
+        public virtual ExternalProvider PCP { get; set; }
+        public virtual NatureOfCondition NatureOfCondition { get; set; }
         public virtual AccidentCode AccidentCode { get; set; }
         public virtual USPSState AccidentState { get; set; }
+        public virtual EPSDTCode EPSDTCode { get; set; }
+        public virtual ChargeBatch ChargeBatch { get; set; }
+        public virtual User User { get; set; }
+        public virtual ChargeInsCoverage CurrentPayerCoverage { get; set; }
 
         //children
         public virtual List<ChargeInsCoverage> ChargeInsCoverages { get; set; } 
-
 
     }
 }

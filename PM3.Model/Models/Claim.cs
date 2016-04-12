@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class Claim
+    public class Claim
     {
         public int ClaimID { get; set; }
-        public int PrepRunID { get; set; }
         public int ChargeID { get; set; }
+        public int PrepRunID { get; set; }
         public int ChargeInsCoverageID { get; set; }
         public string InsPlanID { get; set; }
         public string EDIPartnerID { get; set; }
@@ -28,8 +28,9 @@ namespace PM3.Model.Models
         public virtual Charge Charge { set; get; }
         public virtual PrepRun PrepRun { get; set; }
         public virtual ChargeInsCoverage ClaimInsCoverage { get; set; }
+        public virtual InsPlan InsPlan { get; set; }
         public virtual EDIPartner EDIPartner { get; set; }
         public virtual InsFormType InsFormType { get; set; }
-        public virtual InsPlan InsPlan { get; set; }
+        public virtual ClaimRun ClaimRun { get; set; }
     }
 }

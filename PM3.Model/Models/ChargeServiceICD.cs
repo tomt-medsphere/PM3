@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    public class ChargeICDs
+    public class ChargeServiceICD
     {
-        public int ChargeICDID { get; set; }
-        public int ChargeID { get; set; }
+        public int ChargeServiceICDID { get; set; }
+        public int ChargeServiceID { get; set; }
         public string ICDID { get; set; }
         public int Sequence { get; set; }
 
         // parents
-        public virtual Charge Charge { get; set; }
         public virtual ICD ICD { get; set; }
+        public virtual ChargeService ChargeService { get; set; }
     }
 }

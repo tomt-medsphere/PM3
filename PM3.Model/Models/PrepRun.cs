@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class PrepRun
+    public class PrepRun
     {
         public int PrepRunID { get; set; }
         public DateTime RunDateTime { get; set; }
