@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    public class PracticeProvider
+    public class Provider
     {
-        public string PracticeProviderID { get; set; }
+        public string ProviderID { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }

@@ -13,9 +13,12 @@ namespace PM3.Model.Models
         public string EDI277txt { get; set; }
         public string SourceID { get; set; }
         public string SourceName { get; set; }
-        public DateTime SourceProcessDate { get; set; }
+        public DateTime? SourceProcessDate { get; set; }
 
         // parents
         public virtual ClaimRun ClaimRun { get; set; }
+
+        // children
+        public virtual List<EDI277STC> EDI277STC { get; set; }
     }
 }

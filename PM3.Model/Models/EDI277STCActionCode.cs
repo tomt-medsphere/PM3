@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    public class POSCode
+    public class EDI277STCActionCode
     {
-        public string POSCodeID { get; set; }
+        public string EDI277STCActionCodeID { get; set; }
         public string Description { get; set; }
-        public string CMSPOSID { get; set; }
+
+        // children
+        public virtual List<EDI277STCAction> EDI277STCActions { get; set; }
     }
 }

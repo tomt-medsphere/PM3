@@ -21,5 +21,8 @@ namespace PM3.Model.Models
         public virtual Claim Claim { get; set; }
         public virtual Charge Charge { get; set; }
         public virtual ChargeService ChargeService { get; set; }
+
+        // children
+        public virtual List<EDI277STCAction> EDI277STCActions { get; set; }
     }
 }

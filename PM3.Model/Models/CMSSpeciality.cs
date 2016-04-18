@@ -9,5 +9,9 @@ namespace PM3.Model.Models
     {
         public string CMSSpecialityID { get; set; }
         public string Description { get; set; }
+
+        // children
+        public virtual List<ExtProvider> ExtProviders { get; set; }
+        public virtual List<TaxonomyCode> TaxomonyCodes { get; set; }
     }
 }

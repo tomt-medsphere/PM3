@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    public class EDI277ActionCode
+    public class RAR
     {
-        public string EDI277ActionCodeID { get; set; }
+        public string RARID { get; set; }
         public string Description { get; set; }
     }
 }

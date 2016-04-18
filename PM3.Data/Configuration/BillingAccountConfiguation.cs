@@ -13,7 +13,7 @@ namespace PM3.Data.Configuration
     {
         public BillingAccountConfiguation()
         {
-            ToTable("BillingAccounts");
+            ToTable("BillingAccount");
             HasKey(p => p.BillingAccountID);
             Property(p => p.BillingAccountID).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(p => p.GuarantorID).IsRequired();

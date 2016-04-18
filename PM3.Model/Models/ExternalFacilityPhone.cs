@@ -14,7 +14,7 @@ namespace PM3.Model.Models
         public int Sequence { get; set; }
 
         // parents
-        public virtual ExternalFacility ExternalFacility { get; set; }
+        public virtual ExtFacility ExternalFacility { get; set; }
         public virtual Phone Phone { get; set; }
     }
 }

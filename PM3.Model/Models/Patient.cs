@@ -29,9 +29,9 @@ namespace PM3.Model.Models
 
         // parents
         public virtual Person Person { get; set; }
-        public virtual PracticeProvider PracticeProvider { get; set; }
+        public virtual Provider PracticeProvider { get; set; }
         public virtual InfoReleaseType InfoReleaseType { get; set; }
         public virtual PayProviderType PayProviderType { get; set; }
-        public virtual ExternalProvider ExternalProvider { get; set; }
+        public virtual ExtProvider ExternalProvider { get; set; }
     }
 }

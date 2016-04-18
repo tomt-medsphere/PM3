@@ -11,5 +11,8 @@ namespace PM3.Model.Models
         public string HCode { get; set; }
         public string Description { get; set; }
         public string MUCode { get; set; }
+
+        // children
+        public virtual List<PersonRace> PersonRaces { get; set; }
     }
 }

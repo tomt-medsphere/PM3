@@ -10,5 +10,9 @@ namespace PM3.Model.Models
     {
         public string CertificateTypeID { get; set; }
         public string Description { get; set; }
+
+        // children
+        public virtual List<ChargeService> ChargeServices { get; set; }
+        public virtual List<Service> Services { get; set; }
     }
 }

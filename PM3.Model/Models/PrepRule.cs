@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    class PrepRules
+    public class PrepRule
     {
         public int PrepRuleID { get; set; }
         public string Description { get; set; }

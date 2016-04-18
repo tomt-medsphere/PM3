@@ -18,5 +18,13 @@ namespace PM3.Model.Models
         public virtual Charge Charge { get; set; }
         public virtual InsCoverage InsCoverage { get; set; }
 
+        // children
+        public virtual List<Charge> Charges { get; set; }
+        public virtual List<PrepError> PrepErrors { get; set; }
+        public virtual List<Claim> Claims { get; set; }
+        public virtual List<PrepRequest> PrepRequests { get; set; }
+        public virtual List<PrepRunPrepError> PrepRunPrepErrors { get; set; }
+        public virtual List<TX> TX { get; set; }
+
     }
 }

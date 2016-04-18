@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    public class ExternalFacility
+    public class ExtFacility
     {
-        public string ExternalFacilityID { get; set; }
+        public string ExtFacilityID { get; set; }
         public string Name { get; set; }
         public String AddressStreet { get; set; }
         public string AddressOther { get; set; }

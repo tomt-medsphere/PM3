@@ -15,7 +15,8 @@ namespace PM3.Model.Models
         public bool CreateTxNote { get; set; }
         public string TXCodeID { get; set; }
 
-        public virtual CARCode CARCode { get; set; }
-        public virtual TXCode TXCode { get; set; }
+        // parents
+        public virtual CAR CARCodes { get; set; }
+        public virtual TXCode TXCodes { get; set; }
     }
 }

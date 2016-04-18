@@ -15,16 +15,17 @@ namespace PM3.Model.Models
         public string InsPlanID { get; set; }
         public string EDIPartnerID { get; set; }
         public string InsFormTypeID { get; set; }
-        public int ClaimRunID { get; set; }
+        public int? ClaimRunID { get; set; }
         public string BillingProviderTIN { get; set; }
         public string BillingProviderNPI { get; set; }
         public decimal TotalFee { get; set; }
         public decimal BilledFee { get; set; }
         public bool Suppress { get; set; }
-        public DateTime ClaimStatusDate { get; set; }
+        public DateTime? ClaimStatusDate { get; set; }
         public string ClaimActionCode { get; set; }
         public string ClaimICN { get; set; }
 
+        // parents
         public virtual Charge Charge { set; get; }
         public virtual PrepRun PrepRun { get; set; }
         public virtual ChargeInsCoverage ClaimInsCoverage { get; set; }
@@ -32,5 +33,8 @@ namespace PM3.Model.Models
         public virtual EDIPartner EDIPartner { get; set; }
         public virtual InsFormType InsFormType { get; set; }
         public virtual ClaimRun ClaimRun { get; set; }
+
+        // children
+        public virtual List<EDI277STC> EDI277STC { get; set; }
     }
 }

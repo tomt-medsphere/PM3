@@ -49,9 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Configuration\AccidentCodeConfiguation.cs" />
     <Compile Include="Configuration\BillingAccountConfiguation.cs" />
+    <Compile Include="Configuration\BillingAccountTypeConfiguration.cs" />
+    <Compile Include="Configuration\CAGCodeConfiguration.cs" />
+    <Compile Include="Configuration\CARActionConfiguration.cs" />
+    <Compile Include="Configuration\CARCodeConfiguration.cs" />
+    <Compile Include="Configuration\CDCEthnicityConfiguration.cs" />
+    <Compile Include="Configuration\CDCRaceConfiguration.cs" />
+    <Compile Include="Configuration\CertificateTypeConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

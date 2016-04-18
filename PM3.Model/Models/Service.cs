@@ -36,7 +36,7 @@ namespace PM3.Model.Models
         public virtual HCPCS HCPCS { get; set; }
         public virtual HCPCS HCPCSL2 { get; set; }
         public virtual RevenueCode RevenueCode { get; set; }
-        public virtual POSCode POSCode { get; set; }
+        public virtual POS POSCode { get; set; }
         public virtual CertificateType CertificateType { get; set; }
 
         // children
