@@ -21,10 +21,16 @@ namespace PM3.Model.Models
         public string X12Version { get; set; }
         public string URL { get; set; }
         public string Note { get; set; }
-        public bool Claims { get; set; }
-        public bool ERA { get; set; }
-        public bool Eligibility { get; set; }
-        public bool Other { get; set; }
+        public bool ClaimsService { get; set; }
+        public bool ERAService { get; set; }
+        public bool EligibilityService { get; set; }
+        public bool OtherService { get; set; }
         public bool Inactive { get; set; }
+
+        // parents
+        public virtual List<EDISession> EDISessions { get; set; }
+        public virtual List<Claim> Claims { get; set; }
+        public virtual List<PrepRunDetail> PrepRunDetails { get; set; }
+        public virtual List<ClaimRun> ClaimRuns { get; set; }
     }
 }

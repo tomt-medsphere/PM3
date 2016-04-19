@@ -15,5 +15,9 @@ namespace PM3.Model.Models
         public DateTime Discharged { get; set; }
         public string Note { get; set; }
         public string MedicalRecordNumber { get; set; }
+
+        // parents
+        public virtual ExtFacility ExtFacility { get; set; }
+        public virtual Patient Patient { get; set; }
     }
 }

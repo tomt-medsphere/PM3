@@ -19,5 +19,12 @@ namespace PM3.Model.Models
         public string Note { get; set; }
         public bool Inactive { get; set; }
 
+        // parents
+        public virtual USPSState USPSState { get; set; }
+        public virtual USPSCountry USPSCountry { get; set; }
+
+        // children
+        public virtual List<Person> Persons { get; set; }
+        public virtual List<EmployerPhone> EmployerPhones { get; set; }
     }
 }

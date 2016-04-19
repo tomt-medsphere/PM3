@@ -10,5 +10,8 @@ namespace PM3.Model.Models
     {
         public string EntityTypeID { get; set; }
         public string Description { get; set; }
+
+        // children
+        public virtual List<ExternalSystemMap> ExternalSystemMaps { get; set; }
     }
 }

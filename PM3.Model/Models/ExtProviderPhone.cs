@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
-    public class ExternalFacilityPhone
+    public class ExtProviderPhone
     {
-        public int ExternalFacilityPhoneID { get; set; }
-        public string ExternalFacilityID { get; set; }
+        public int ExtPracticePhoneID { get; set; }
+        public int ExtProviderID { get; set; }
         public int PhoneID { get; set; }
         public int Sequence { get; set; }
 
         // parents
-        public virtual ExtFacility ExternalFacility { get; set; }
+        public virtual ExtProvider ExtProvider { get; set; }
         public virtual Phone Phone { get; set; }
     }
 }
