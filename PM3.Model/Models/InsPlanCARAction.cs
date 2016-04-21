@@ -8,12 +8,15 @@ namespace PM3.Model.Models
 {
     public class InsPlanCARAction
     {
+        public int InsPlanCARActionID { get; set; }
         public string CARID { get; set; }
         public string InsPlanID { get; set; }
         public string ShortDescription { get; set; }
         public bool SetReviewStatus { get; set; }
         public bool CreateTXNote { get; set; }
         public string TXCodeID { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         // parents
         public virtual CAR CAR { get; set; }

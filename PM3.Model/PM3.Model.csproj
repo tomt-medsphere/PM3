@@ -118,6 +118,7 @@
     <Compile Include="Models\PatientNote.cs" />
     <Compile Include="Models\PayProviderType.cs" />
     <Compile Include="Models\PersonEthnicity.cs" />
+    <Compile Include="Models\PersonPhone.cs" />
     <Compile Include="Models\PersonRace.cs" />
     <Compile Include="Models\Phone.cs" />
     <Compile Include="Models\POS.cs" />
@@ -162,7 +163,9 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\USPSCountry.cs" />
     <Compile Include="Models\USPSState.cs" />
+    <Compile Include="Models\PaymentCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\TXType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

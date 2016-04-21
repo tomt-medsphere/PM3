@@ -8,7 +8,7 @@ namespace PM3.Model.Models
 {
     public class ExtProviderPhone
     {
-        public int ExtPracticePhoneID { get; set; }
+        public int ExtProviderPhoneID { get; set; }
         public int ExtProviderID { get; set; }
         public int PhoneID { get; set; }
         public int Sequence { get; set; }

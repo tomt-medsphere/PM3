@@ -9,11 +9,14 @@ namespace PM3.Model.Models
 {
     public class CARAction
     {
+        public int CARActionID { get; set; }
         public string CARCodeID { get; set; }
         public string ShortDescription { get; set; }
         public bool SetReview { get; set; }
         public bool CreateTxNote { get; set; }
         public string TXCodeID { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         // parents
         public virtual CAR CARCodes { get; set; }

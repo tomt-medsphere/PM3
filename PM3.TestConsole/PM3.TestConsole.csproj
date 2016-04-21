@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FBA4A9AE-6D3F-43B9-AA90-4BDD462C2384}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{89BD3E24-35E4-4462-A2E6-8FC7B11DB23F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PM3.Data</RootNamespace>
-    <AssemblyName>PM3.Data</AssemblyName>
+    <RootNamespace>PM3.TestConsole</RootNamespace>
+    <AssemblyName>PM3.TestConsole</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -38,10 +41,6 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector.NET 6.9\Assemblies\v4.5\MySql.Data.Entity.EF6.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -53,36 +52,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configuration\AccidentCodeConfiguation.cs" />
-    <Compile Include="Configuration\BillingAccountConfiguation.cs" />
-    <Compile Include="Configuration\BillingAccountTypeConfiguration.cs" />
-    <Compile Include="Configuration\CAGCodeConfiguration.cs" />
-    <Compile Include="Configuration\CARActionConfiguration.cs" />
-    <Compile Include="Configuration\CARCodeConfiguration.cs" />
-    <Compile Include="Configuration\CDCEthnicityConfiguration.cs" />
-    <Compile Include="Configuration\CDCRaceConfiguration.cs" />
-    <Compile Include="Configuration\CertificateTypeConfiguration.cs" />
-    <Compile Include="Configuration\PersonConfiguration.cs" />
-    <Compile Include="Infrastructure\DbFactory.cs" />
-    <Compile Include="Infrastructure\Disposable.cs" />
-    <Compile Include="Infrastructure\IDbFactory.cs" />
-    <Compile Include="Infrastructure\IRepository.cs" />
-    <Compile Include="Infrastructure\IUnitOfWork.cs" />
-    <Compile Include="Infrastructure\RepositoryBase.cs" />
-    <Compile Include="Infrastructure\UnitOfWork.cs" />
-    <Compile Include="PM3Entities.cs" />
-    <Compile Include="PM3SeedData.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\AccidentCodeRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PM3.Model\PM3.Model.csproj">
-      <Project>{0E6D5462-C341-4EB0-88AD-F6F6B4A42E04}</Project>
-      <Name>PM3.Model</Name>
+    <ProjectReference Include="..\PM3.Data\PM3.Data.csproj">
+      <Project>{FBA4A9AE-6D3F-43B9-AA90-4BDD462C2384}</Project>
+      <Name>PM3.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

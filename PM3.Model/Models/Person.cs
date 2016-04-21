@@ -42,6 +42,7 @@ namespace PM3.Model.Models
         public string PostalCode { get; set; }
         public string USPSCountryID { get; set; }
 
+        //parents
         public virtual Employer Employer { get; set;}
         public virtual Person EmergencyContact { get; set; }
         public virtual RelationshipCode EmergencycontactRelationship { get; set; }
@@ -55,5 +56,16 @@ namespace PM3.Model.Models
         public virtual USPSCountry USPSCountry { get; set; }
         public virtual Salutation Salutation { get; set; }
         public virtual Suffix Suffix { get; set; }
+
+        // children
+        public virtual List<BillingAccount> BillingAccounts { get; set; }
+        public virtual List<InsPolicy> InsPolcies { get; set; }
+        public virtual List<Patient> Patients { get; set; }
+        public virtual List<PersonPhone> PersonPhones { get; set; }
+        public virtual List<PersonRace> PersonRaces { get; set; }
+        public virtual List<PersonEthnicity> PersonEthnicities { get; set; }
+        public virtual List<Person> Wards { get; set; }
+        public virtual List<Person> EmergencyCallers { get; set; }
+
     }
 }
