@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class ExtProviderPhone
     {
-        public int ExtProviderPhoneID { get; set; }
-        public int ExtProviderID { get; set; }
-        public int PhoneID { get; set; }
+        public int ExtProviderPhoneId { get; set; }
+        public int ExtProviderId { get; set; }
+        public int PhoneId { get; set; }
         public int Sequence { get; set; }
 
         // parents

@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class PrepRunPrepError
     {
-        public int PrepRunPrepErrorID { get; set; }
-        public int PrepRunID { get; set; }
-        public int PrepRuleID { get; set; }
-        public int ChargeID { get; set; }
-        public int? ChargeServiceID { get; set; }
-        public int? ChargeInsCoverageID { get; set; }
+        public int PrepRunPrepErrorId { get; set; }
+        public int PrepRunId { get; set; }
+        public int PrepRuleId { get; set; }
+        public int ChargeId { get; set; }
+        public int? ChargeServiceId { get; set; }
+        public int? ChargeInsCoverageId { get; set; }
         public string Note { get; set; }
         public bool OnDemand { get; set; }
 

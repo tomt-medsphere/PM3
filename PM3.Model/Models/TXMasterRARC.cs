@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
-    public class TXMasterRARC
+    public class TxMasterRARC
     {
-        public int TXMasterRARCID { get; set; }
-        public int TXMasterID { get; set; }
-        public string RARID { get; set; }
+        public int TxMasterRARCid { get; set; }
+        public int TxMasterId { get; set; }
+        public string RARCId { get; set; }
         public int Sequence { get; set; }
 
         // parents
-        public virtual TXMaster TXMaster { get; set; }
-        public virtual RAR RAR { get; set; }
+        public virtual TxMaster TxMaster { get; set; }
+        public virtual RARC RARC { get; set; }
     }
 }

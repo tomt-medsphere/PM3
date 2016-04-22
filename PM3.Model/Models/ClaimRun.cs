@@ -1,19 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class ClaimRun
     {
-        public int ClaimRunID { get; set; }
+        public int ClaimRunId { get; set; }
         public DateTime CreatedDateTime { get; set; }
-        public string UserID { get; set; }
-        public string EDIPartnerID { get; set; }
-        public string InsFormTypeID { get; set; }
-        public string ClaimRunStatusID { get; set; }
+        public string UserId { get; set; }
+        public string EDIPartnerId { get; set; }
+        public string InsFormTypeId { get; set; }
+        public string ClaimRunStatusId { get; set; }
         public DateTime? SubmittedDateTime { get; set; }
         public DateTime? AcknowledgedDateTime { get; set; }
         public int ClaimsProcessed { get; set; }

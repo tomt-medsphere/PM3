@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class Interface
     {
-        public int InterfaceID { get; set; }
+        public int InterfaceId { get; set; }
         public string Description { get; set; }
         public string Protocol { get; set; }
         public string Version { get; set; }

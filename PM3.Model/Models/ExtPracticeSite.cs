@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
     public class ExtPracticeSite
     {
-        public int ExtPracticeSiteID { get; set; }
-        public int ExtPracticeID { get; set; }
+        public int ExtPracticeSiteId { get; set; }
+        public int ExtPracticeId { get; set; }
         public string Name { get; set; }
         public string AddressStreet { get; set; }
         public string AddressOther { get; set; }
         public string City { get; set; }
-        public string USPSStateID { get; set; }
+        public string USPSStateId { get; set; }
         public string PostalCode { get; set; }
         public bool Inactive { get; set; }
 

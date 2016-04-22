@@ -1,11 +1,5 @@
 ﻿using PM3.Model.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Data.Configuration
 {
@@ -14,8 +8,8 @@ namespace PM3.Data.Configuration
         public AccidentCodeConfiguation()
         {
             ToTable("AccidentCode");
-            HasKey(p => p.AccidentCodeID);
-            Property(p => p.AccidentCodeID).IsRequired().HasMaxLength(10);
+            HasKey(p => p.AccidentCodeId);
+            Property(p => p.AccidentCodeId).IsRequired().HasMaxLength(10);
             Property(p => p.Description).IsRequired().HasMaxLength(60);
 
             // children

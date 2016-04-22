@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
-    public class TXHCPCSModifier
+    public class TxHCPCSModifier
     {
-        public int TXHCPCSModifierID { get; set; }
-        public int TXID { get; set; }
-        public string HCPCSModifierID { get; set; }
+        public int TxHCPCSModifierId { get; set; }
+        public int TxId { get; set; }
+        public string HCPCSModifierId { get; set; }
         public int Sequence { get; set; }
 
         // parents
-        public virtual TX TX { get; set; }
+        public virtual Tx Tx { get; set; }
         public virtual HCPCSModifier HCPCSModifier { get; set; }
     }
 }

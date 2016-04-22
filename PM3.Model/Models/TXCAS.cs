@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
-    public class TXCAS
+    public class TxCAS
     {
-        public int TXCASID { get; set; }
-        public int TXID { get; set; }
-        public string CAGCodeID { get; set; }
-        public string CARCodeID { get; set; }
+        public int TxCASId { get; set; }
+        public int TxId { get; set; }
+        public string CagCodeId { get; set; }
+        public string CarCodeId { get; set; }
         public decimal Amount { get; set; }
         public int Sequence { get; set; }
 
         // parents
-        public virtual TX TX { get; set; }
-        public virtual CAGCode CAGCode { get; set; }
-        public virtual CAR CARCode { get; set; }
+        public virtual Tx Tx { get; set; }
+        public virtual CagCode CagCode { get; set; }
+        public virtual Car CarCode { get; set; }
     }
 }

@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class EDI277STCAction
     {
-        public int EDI277STCActionID { get; set; }
-        public int EDI277STCID { get; set; }
-        public string UserID { get; set; }
-        public string EDI277ActionCodeID { get; set; }
+        public int EDI277STCActionId { get; set; }
+        public int EDI277STCId { get; set; }
+        public string UserId { get; set; }
+        public string EDI277ActionCodeId { get; set; }
         public DateTime ActionDateTime { get; set; }
         public string Note { get; set; }
 

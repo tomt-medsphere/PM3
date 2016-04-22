@@ -1,30 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class Charge
     {
-        public int ChargeID { get; set; }
-        public int PatientID { get; set; }
-        public int BillingAccountID { get; set; }
-        public string PracticeSiteID { get; set; }
-        public int? FacilityAdmissionID { get; set; }
-        public string ExtFacilityID { get; set; }
+        public int ChargeId { get; set; }
+        public int PatientId { get; set; }
+        public int BillingAccountId { get; set; }
+        public string PracticeSiteId { get; set; }
+        public int? FacilityAdmissionId { get; set; }
+        public string ExtFacilityId { get; set; }
         public DateTime? AdmitDateTime { get; set; }
         public DateTime? DischargeDateTime { get; set; }
-        public string PWKTransmissionCodeID { get; set; }
-        public string PWKTypeCodeID { get; set; }
-        public string PaperworkID { get; set; }
+        public string PWKTransmissionCodeId { get; set; }
+        public string PWKTypeCodeId { get; set; }
+        public string PaperworkId { get; set; }
         // external provider
-        public string RefProviderID { get; set; }
+        public string RefProviderId { get; set; }
         public DateTime? ReferralDate { get; set; }
-        public string PCPID { get; set; }
-        public DateTime? PCPLastSeen { get; set; }
-        public string NatureOfConditionID { get; set; }
+        public string Pcpid { get; set; }
+        public DateTime? PcpLastSeen { get; set; }
+        public string NatureOfConditionId { get; set; }
         public DateTime? LastXRay { get; set; }
         
         // work and accident
@@ -40,28 +37,28 @@ namespace PM3.Model.Models
         public DateTime? DisabilityEnd { get; set; }
         public DateTime? LastWorked { get; set; }
         public DateTime? ReturnToWork { get; set; }
-        public string AccidentCodeID { get; set; }
-        public string AccidentStateID { get; set; }
+        public string AccidentCodeId { get; set; }
+        public string AccidentStateId { get; set; }
         public DateTime? AccidentDateTime { get; set; }
       
         // misc
-        public string CLIATypeID { get; set; }
-        public string CLIANumber { get; set; }
+        public string CliaTypeId { get; set; }
+        public string CliaNumber { get; set; }
         public string MammographyCert { get; set; }
         public string PriorAuthCode { get; set; }
         public bool Pregnant { get; set; }
-        public DateTime? LMP { get; set; }
-        public DateTime? EDC { get; set; }
-        public string EPSDTCodeID { get; set; }
+        public DateTime? Lmp { get; set; }
+        public DateTime? Edc { get; set; }
+        public string EpsdtCodeId { get; set; }
      
         // system stuff
-        public int ChargeBatchID { get; set; }
+        public int ChargeBatchId { get; set; }
         public bool ChargeClosed { get; set; }
         public bool ForceToPaper { get; set; }
         public DateTime EntryDateTime { get; set; }
-        public string UserID { get; set; }
+        public string UserId { get; set; }
         public bool ChargePrepped { get; set; }
-        public string CurrentPayerCoverageID { get; set; }
+        public string CurrentPayerCoverageId { get; set; }
 
         // parents
         public virtual Patient Patient { set; get; }
@@ -72,11 +69,11 @@ namespace PM3.Model.Models
         public virtual PWKTransmissionCode PWKTransmissinoCode { get; set; }
         public virtual PWKTypeCode PWKTypeCode { get; set; }
         public virtual ExtProvider RefProvider { get; set; } 
-        public virtual ExtProvider PCP { get; set; }
+        public virtual ExtProvider Pcp { get; set; }
         public virtual NatureOfCondition NatureOfCondition { get; set; }
         public virtual AccidentCode AccidentCode { get; set; }
         public virtual USPSState AccidentState { get; set; }
-        public virtual EPSDTCode EPSDTCode { get; set; }
+        public virtual EpsdtCode EpsdtCode { get; set; }
         public virtual ChargeBatch ChargeBatch { get; set; }
         public virtual User User { get; set; }
         public virtual ChargeInsCoverage CurrentPayerCoverage { get; set; }

@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class ChargeServiceMod
     {
-        public int ChargeServiceModID { get; set; }
-        public int ChargeServiceID { get; set; }
-        public string HCPCSModifierID { get; set; }
+        public int ChargeServiceModId { get; set; }
+        public int ChargeServiceId { get; set; }
+        public string HCPCSModifierId { get; set; }
         public int Sequence { get; set; }
 
         // parents

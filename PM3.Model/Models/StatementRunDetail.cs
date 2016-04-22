@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class StatementRunDetail
     {
-        public int StatementRunDetailID { get; set; }
-        public int StatementRunID { get; set; }
-        public int BillingAccountID { get; set; }
+        public int StatementRunDetailId { get; set; }
+        public int StatementRunId { get; set; }
+        public int BillingAccountId { get; set; }
         public string StatementData { get; set; }
 
         // parents

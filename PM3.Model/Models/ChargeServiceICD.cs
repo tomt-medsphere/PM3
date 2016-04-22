@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class ChargeServiceICD
     {
-        public int ChargeServiceICDID { get; set; }
-        public int ChargeServiceID { get; set; }
-        public string ICDID { get; set; }
+        public int ChargeServiceICDId { get; set; }
+        public int ChargeServiceId { get; set; }
+        public string ICDId { get; set; }
         public int Sequence { get; set; }
 
         // parents

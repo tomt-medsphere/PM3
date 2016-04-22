@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
-    class PMConfig
+    class PmConfig
     {
-        public string PMConfigID { get; set; }
+        public string PmConfigId { get; set; }
         public string Value1 { get; set; }
         public string Value2 { get; set; }
         public string Value3 { get; set; }

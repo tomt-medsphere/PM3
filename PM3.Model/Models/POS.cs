@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class POS
     {
-        public string POSID { get; set; }
+        public string POSId { get; set; }
         public string Description { get; set; }
-        public string CMSPOSID { get; set; }
+        public string CMSPOSId { get; set; }
     }
 }

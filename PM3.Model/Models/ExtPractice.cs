@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
     public class ExtPractice
     {
-        public string ExtPracticeID { get; set; }
+        public string ExtPracticeId { get; set; }
         public string Name { get; set; }
         public bool Inactive { get; set; }
 

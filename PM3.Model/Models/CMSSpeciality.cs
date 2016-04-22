@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
-    public class CMSSpeciality
+    public class CmsSpeciality
     {
-        public string CMSSpecialityID { get; set; }
+        public string CmsSpecialityId { get; set; }
         public string Description { get; set; }
 
         // children

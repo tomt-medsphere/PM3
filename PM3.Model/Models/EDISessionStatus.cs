@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
     public class EDISessionStatus
     {
-        public string EDISessionStatusID { get; set; }
+        public string EDISessionStatusId { get; set; }
         public string Description { get; set; }
 
         // children

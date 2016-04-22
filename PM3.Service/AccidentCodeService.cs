@@ -1,11 +1,7 @@
 ﻿using PM3.Data.Infrastructure;
 using PM3.Data.Repositories;
 using PM3.Model.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Service
 {
@@ -21,34 +17,32 @@ namespace PM3.Service
     // implementation of those operations
     public class AccidentCodeService : IAccidentCodeService
     {
-        private readonly IAccidentCodeRepository accidentCodeRepository;
-        private readonly IUnitOfWork unitOfWork;
-
-        //         public GadgetService(IGadgetRepository gadgetsRepository, ICategoryRepository categoryRepository, IUnitOfWork unitOfWork)
+        private readonly IAccidentCodeRepository _accidentCodeRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
         public AccidentCodeService(IAccidentCodeRepository accidentCodeRepository, IUnitOfWork unitOfWork)
         {
-            this.accidentCodeRepository = accidentCodeRepository;
-            this.unitOfWork = unitOfWork;
+            this._accidentCodeRepository = accidentCodeRepository;
+            this._unitOfWork = unitOfWork;
         }
 
         public IEnumerable<AccidentCode> GetAccidentCodes()
         {
-            var accidentCodes = accidentCodeRepository.GetAll();
+            var accidentCodes = _accidentCodeRepository.GetAll();
             return accidentCodes;
         }
         public AccidentCode GetAccidentCode(string id)
         {
-            var accidentcode = accidentCodeRepository.GetById(id);
+            var accidentcode = _accidentCodeRepository.GetById(id);
             return accidentcode;
         }
         public void CreateAccidentCode(AccidentCode accidentCode)
         {
-            accidentCodeRepository.Add(accidentCode);
+            _accidentCodeRepository.Add(accidentCode);
         }
         public void SaveAccidentCode()
         {
-            unitOfWork.Commit();
+            _unitOfWork.Commit();
         }
     }
 }

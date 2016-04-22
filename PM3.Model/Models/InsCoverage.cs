@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class InsCoverage
     {
-        public int InsCoverageID { get; set; }
-        public int PatientID { get; set; }
-        public int InsPolicyID { get; set; }
-        public string RelationshipCodeID { get; set; }
-        public string MemberID { get; set; }
+        public int InsCoverageId { get; set; }
+        public int PatientId { get; set; }
+        public int InsPolicyId { get; set; }
+        public string RelationshipCodeId { get; set; }
+        public string MemberId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string Note { get; set; }

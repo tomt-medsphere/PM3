@@ -1,25 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class InsPlanCARAction
     {
-        public int InsPlanCARActionID { get; set; }
-        public string CARID { get; set; }
-        public string InsPlanID { get; set; }
+        public int InsPlanCARActionId { get; set; }
+        public string CARId { get; set; }
+        public string InsPlanId { get; set; }
         public string ShortDescription { get; set; }
         public bool SetReviewStatus { get; set; }
-        public bool CreateTXNote { get; set; }
-        public string TXCodeID { get; set; }
+        public bool CreateTxNote { get; set; }
+        public string TxCodeId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
         // parents
-        public virtual CAR CAR { get; set; }
+        public virtual Car Car { get; set; }
         public virtual InsPlan InsPlan { get; set; }
     }
 }

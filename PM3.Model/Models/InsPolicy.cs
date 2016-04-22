@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
@@ -10,23 +6,23 @@ namespace PM3.Model.Models
     {
         public int InsPolicyId { get; set; }
         public string InsPlanId { get; set; }
-        public int SubscriberID { get; set; }
+        public int SubscriberId { get; set; }
         public string PolicyNumber { get; set; }
         public string GroupNumber { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string Note { get; set; }
         public decimal CoPayAmount { get; set; }
-        public string SubscriberMemberID { get; set; }
+        public string SubscriberMemberId { get; set; }
         public DateTime DateOfInjury { get; set; }
-        public string AccidentCodeID { get; set; }
-        public string AccidentStateID { get; set; }
+        public string AccidentCodeId { get; set; }
+        public string AccidentStateId { get; set; }
         public string GroupName { get; set; }
         public string AltLastName { get; set; }
         public string AltFirstName { get; set; }
         public string AltMiddleName { get; set; }
-        public string AltSuffixID { get; set; }
-        public DateTime AltDOB { get; set; }
+        public string AltSuffixId { get; set; }
+        public DateTime AltDob { get; set; }
 
         // parents
         public virtual InsPlan InsPlan { get; set; }

@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class Phone
     {
-        public int PhoneID { get; set; }
-        public string PhoneTypeID { get; set; }
-        public string ITUCountyID { get; set; }
+        public int PhoneId { get; set; }
+        public string PhoneTypeId { get; set; }
+        public string ItuCountyId { get; set; }
         public string AreaCode { get; set; }
         public string LocalNumber { get; set; }
         public string Extension { get; set; }

@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class PatientBillingAccount
     {
-        public int PatientBillingAccountID { get; set; }
-        public int PatientID { get; set; }
-        public int BillingAccountID { get; set; }
-        public string RelationshipCodeID { get; set; }
+        public int PatientBillingAccountId { get; set; }
+        public int PatientId { get; set; }
+        public int BillingAccountId { get; set; }
+        public string RelationshipCodeId { get; set; }
         public int Sequence { get; set; }
 
         // parents

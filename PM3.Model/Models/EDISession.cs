@@ -1,18 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class EDISession
     {
-        public int EDISessionID { get; set; }
-        public string EDIPartnerID { get; set; }
+        public int EDISessionId { get; set; }
+        public string EDIPartnerId { get; set; }
         public DateTime EDISessionDateTime { get; set; }
-        public string EDISessionStatusID { get; set; }
-        public string UserID { get; set; }
+        public string EDISessionStatusId { get; set; }
+        public string UserId { get; set; }
 
         // parents
         public virtual EDIPartner EDIPartner { get; set; }

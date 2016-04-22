@@ -1,47 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class ChargeService
     {
-        public int ChargeServiceID { get; set; }
-        public int ChargeID { get; set; }
-        public int PatientID { get; set; }
-        public int BillingAccountID { get; set; }
+        public int ChargeServiceId { get; set; }
+        public int ChargeId { get; set; }
+        public int PatientId { get; set; }
+        public int BillingAccountId { get; set; }
         public int Sequence { get; set; }
         public DateTime DateOfServiceStart { get; set; }
         public DateTime? DateOfServiceEnd { get; set; }
-        public string ServiceID { get; set; }
+        public string ServiceId { get; set; }
         public string Description { get; set; }
         public string StatementDescription { get; set; }
-        public string HCPCSID { get; set; }
-        public string HCPCSL2ID { get; set; }
+        public string HCPCSId { get; set; }
+        public string HCPCSL2Id { get; set; }
         public decimal Units { get; set; }
         public decimal Fee { get; set; }
-        public string POSID { get; set; }
+        public string POSId { get; set; }
         public string BillingNote { get; set; }
-        public string CertificateTypeID { get; set; }
-        public string RenderingProviderID { get; set; }
-        public string SupervisingProviderID { get; set; }
-        public string OrderingProviderID { get; set; }
+        public string CertificateTypeId { get; set; }
+        public string RenderingProviderId { get; set; }
+        public string SupervisingProviderId { get; set; }
+        public string OrderingProviderId { get; set; }
         public bool AcceptAssignment { get; set; }
         public bool PayProvider { get; set; }
         public bool BillInsurance { get; set; }
         public bool Taxable { get; set; }
-        public string NDC { get; set; }
-        public string MEAReferenceID { get; set; }
-        public string MEAQualifierID { get; set; }
-        public string MeasurementUnitID { get; set; }
-        public string MEAValue { get; set; }
+        public string Ndc { get; set; }
+        public string MEAReferenceId { get; set; }
+        public string MEAQualifierId { get; set; }
+        public string MeasurementUnitId { get; set; }
+        public string MeaValue { get; set; }
         public bool StatementClosed { get; set; }
         public decimal Balance { get; set; }
         public decimal? StatementBalance { get; set; }
         public bool ChargeClosed { get; set; }
-        public string ChargeServiceStatusID { get; set; }
+        public string ChargeServiceStatusId { get; set; }
         public DateTime ChargeServiceStatudDate { get; set; }
 
         // parents
@@ -66,7 +63,7 @@ namespace PM3.Model.Models
         public virtual List<ChargeServiceICD> ChargeServiceICD { get; set; }
         public virtual List<PrepError> PrepErrors { get; set; }
         public virtual List< PrepRunPrepError> PrepRunPrepErrors { get; set; }
-        public virtual List<TX> TX { get; set; }
+        public virtual List<Tx> Tx { get; set; }
         public virtual List<EDI277STC> EDI277STC { get; set; }
     }
 }

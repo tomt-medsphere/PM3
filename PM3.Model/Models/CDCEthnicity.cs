@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
-    public class CDCEthnicity
+    public class CdcEthnicity
     {
-        public string CDCEthnicityID { get; set; }
+        public string CdcEthnicityId { get; set; }
         public string HCode { get; set; }
         public string Description { get; set; }
-        public string MUCode { get; set; }
+        public string MuCode { get; set; }
 
         // children
         public virtual List<PersonEthnicity> PersonEthnicities { get; set; }

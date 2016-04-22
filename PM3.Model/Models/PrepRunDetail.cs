@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class PrepRunDetail
     {
-        public int PrepRunDetailID { get; set; }
-        public int PrepRunID { get; set; }
-        public int ChargeID { get; set; }
-        public string InsPlanID { get; set; }
+        public int PrepRunDetailId { get; set; }
+        public int PrepRunId { get; set; }
+        public int ChargeId { get; set; }
+        public string InsPlanId { get; set; }
         public DateTime FirstDateOfService { get; set; }
         public decimal TotalFee { get; set; }
         public decimal BilledFee { get; set; }
         public string PassedPrep { get; set; }
-        public string EDIPartnerID { get; set; }
-        public string InsFormTypeID { get; set; }
+        public string EDIPartnerId { get; set; }
+        public string InsFormTypeId { get; set; }
 
         // parents
         public virtual PrepRun PrepRun { get; set; }

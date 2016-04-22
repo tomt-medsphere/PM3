@@ -1,8 +1,8 @@
 ﻿namespace PM3.Model.Models
 {
-    public class MSPType
+    public class RARC
     {
-        public string MSPTypeId { get; set; }
+        public string RARCId { get; set; }
         public string Description { get; set; }
     }
 }

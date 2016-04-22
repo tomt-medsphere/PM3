@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
-    public class IDQualifier
+    public class IdQualifier
     {
-        public string IDQualifierID { get; set; }
+        public string IdQualifierId { get; set; }
         public string Description { get; set; }
     }
 }

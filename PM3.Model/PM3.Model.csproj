@@ -97,7 +97,7 @@
     <Compile Include="Models\HCPCS.cs" />
     <Compile Include="Models\HCPCSModifier.cs" />
     <Compile Include="Models\ICD.cs" />
-    <Compile Include="Models\IDQualifier.cs" />
+    <Compile Include="Models\IdQualifier.cs" />
     <Compile Include="Models\InfoReleaseType.cs" />
     <Compile Include="Models\InsCoverage.cs" />
     <Compile Include="Models\InsFormType.cs" />
@@ -150,22 +150,22 @@
     <Compile Include="Models\PhoneType.cs" />
     <Compile Include="Models\PMConfig.cs" />
     <Compile Include="Models\PrepRule.cs" />
-    <Compile Include="Models\RAR.cs" />
+    <Compile Include="Models\RARC.cs" />
     <Compile Include="Models\RelationshipCode.cs" />
     <Compile Include="Models\TaxonomyCode.cs" />
-    <Compile Include="Models\TX.cs" />
-    <Compile Include="Models\TXBatch.cs" />
-    <Compile Include="Models\TXCAS.cs" />
-    <Compile Include="Models\TXCode.cs" />
-    <Compile Include="Models\TXHCPCSModifier.cs" />
-    <Compile Include="Models\TXMaster.cs" />
-    <Compile Include="Models\TXMasterRARC.cs" />
+    <Compile Include="Models\Tx.cs" />
+    <Compile Include="Models\TxBatch.cs" />
+    <Compile Include="Models\TxCAS.cs" />
+    <Compile Include="Models\TxCode.cs" />
+    <Compile Include="Models\TxHCPCSModifier.cs" />
+    <Compile Include="Models\TxMaster.cs" />
+    <Compile Include="Models\TxMasterRARC.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\USPSCountry.cs" />
     <Compile Include="Models\USPSState.cs" />
     <Compile Include="Models\PaymentCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Models\TXType.cs" />
+    <Compile Include="Models\TxType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

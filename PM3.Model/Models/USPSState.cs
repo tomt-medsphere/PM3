@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class USPSState
     {
-        public string USPSStateID { get; set; }
+        public string USPSStateId { get; set; }
         public string Name { get; set; }
     }
 }

@@ -1,30 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class Patient
     {
-        public int PatientID { get; set; }
-        public int PersonID { get; set; }
-        public string XRayID { get; set; }
+        public int PatientId { get; set; }
+        public int PersonId { get; set; }
+        public string XRayId { get; set; }
         public string ChartNumber { get; set; }
-        public string PracticeProviderID { get; set; }
+        public string PracticeProviderId { get; set; }
         public bool InfoRelease { get; set; }
-        public string InfoReleaseTypeID { get; set; }
+        public string InfoReleaseTypeId { get; set; }
         public DateTime InfoReleaseDate { get; set; }
         public bool PayProvider { get; set; }
-        public string PayProviderTypeID { get; set; }
+        public string PayProviderTypeId { get; set; }
         public DateTime PayProviderDate { get; set; }
-        public bool HIPAARelease { get; set; }
-        public DateTime HIPAAReleaseDate { get; set; }
-        public string PCPID { get; set; }
-        public DateTime PCPLastSeen { get; set; }
-        public DateTime LMP { get; set; }
-        public DateTime EDC { get; set; }
+        public bool HipaaRelease { get; set; }
+        public DateTime HipaaReleaseDate { get; set; }
+        public string Pcpid { get; set; }
+        public DateTime PcpLastSeen { get; set; }
+        public DateTime Lmp { get; set; }
+        public DateTime Edc { get; set; }
         public bool Inactive { get; set; }
 
         // parents

@@ -1,24 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Data.Infrastructure
+﻿namespace PM3.Data.Infrastructure
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly IDbFactory dbFactory;
-        private PM3Entities dbContext;
+        private readonly IDbFactory _dbFactory;
+        private Pm3Entities _dbContext;
 
         public UnitOfWork(IDbFactory dbFactory)
         {
-            this.dbFactory = dbFactory;
+            this._dbFactory = dbFactory;
         }
 
-        public PM3Entities DbContext
+        public Pm3Entities DbContext
         {
-            get { return DbContext ?? (dbContext = dbFactory.Init()); }
+            //get { return DbContext ?? (dbContext = dbFactory.Init()); } // bad code
+            get { return _dbContext ?? (_dbContext = _dbFactory.Init()); } // good code
         }
 
         public void Commit()

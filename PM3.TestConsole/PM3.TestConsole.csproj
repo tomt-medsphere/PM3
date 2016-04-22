@@ -64,6 +64,14 @@
       <Project>{FBA4A9AE-6D3F-43B9-AA90-4BDD462C2384}</Project>
       <Name>PM3.Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PM3.Model\PM3.Model.csproj">
+      <Project>{0E6D5462-C341-4EB0-88AD-F6F6B4A42E04}</Project>
+      <Name>PM3.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PM3.Service\PM3.Service.csproj">
+      <Project>{6862A146-4634-4CB8-BDDB-FBD8AD184E40}</Project>
+      <Name>PM3.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

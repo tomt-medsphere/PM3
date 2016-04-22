@@ -1,25 +1,20 @@
-﻿using PM3.Model.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace PM3.Model.Models
 {
     public class CARAction
     {
-        public int CARActionID { get; set; }
-        public string CARCodeID { get; set; }
+        public int CARActionId { get; set; }
+        public string CarCodeId { get; set; }
         public string ShortDescription { get; set; }
         public bool SetReview { get; set; }
         public bool CreateTxNote { get; set; }
-        public string TXCodeID { get; set; }
+        public string TxCodeId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
         // parents
-        public virtual CAR CARCodes { get; set; }
-        public virtual TXCode TXCodes { get; set; }
+        public virtual Car CarCodes { get; set; }
+        public virtual TxCode TxCodes { get; set; }
     }
 }

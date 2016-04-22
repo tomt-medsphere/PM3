@@ -1,18 +1,13 @@
-﻿using PM3.Model.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace PM3.Model
+namespace PM3.Model.Models
 {
-    public class TXType
+    public class TxType
     {
-        public string TXTypeID { get; set; }
+        public string TxTypeId { get; set; }
         public string Description { get; set; }
 
         // children
-        public virtual List<TXCode> TXCodes { get; set; }
+        public virtual List<TxCode> TxCodes { get; set; }
     }
 }

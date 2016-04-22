@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PM3.Model.Models
 {
     public class PrepError
     {
-        public int PrepErrorID { get; set; }
-        public int ChargeID { get; set; }
-        public int ChargeServiceID { get; set; }
-        public int PrepRuleID { get; set; }
-        public int ChargeInsCoverageID { get; set; }
+        public int PrepErrorId { get; set; }
+        public int ChargeId { get; set; }
+        public int ChargeServiceId { get; set; }
+        public int PrepRuleId { get; set; }
+        public int ChargeInsCoverageId { get; set; }
         public string ErrorNote { get; set; }
         public DateTime CorrectedDateTime { get; set; }
-        public string UserID { get; set; }
+        public string UserId { get; set; }
         public bool OnDemand { get; set; }
 
         // parents

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class PrepRule
     {
-        public int PrepRuleID { get; set; }
+        public int PrepRuleId { get; set; }
         public string Description { get; set; }
         public string CheckObject { get; set; }
         public string CheckProperty { get; set; }

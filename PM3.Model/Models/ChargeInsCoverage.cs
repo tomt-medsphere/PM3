@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
     public class ChargeInsCoverage
     {
-        public int ChargeInsCoverageID { get; set; }
-        public int ChargeID { get; set; }
-        public int InscoverageID { get; set; }
+        public int ChargeInsCoverageId { get; set; }
+        public int ChargeId { get; set; }
+        public int InscoverageId { get; set; }
         public int Sequence { get; set; }
         public bool Inactive { get; set; }
 
@@ -24,7 +20,7 @@ namespace PM3.Model.Models
         public virtual List<Claim> Claims { get; set; }
         public virtual List<PrepRequest> PrepRequests { get; set; }
         public virtual List<PrepRunPrepError> PrepRunPrepErrors { get; set; }
-        public virtual List<TX> TX { get; set; }
+        public virtual List<Tx> Tx { get; set; }
 
     }
 }

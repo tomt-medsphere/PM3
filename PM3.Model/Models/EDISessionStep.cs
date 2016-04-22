@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PM3.Model.Models
+﻿namespace PM3.Model.Models
 {
     public class EDISessionStep
     {
-        public int EDISessionStepID { get; set; }
-        public int EDISessionID { get; set; }
-        public string EDISessionStageID { get; set; }
+        public int EDISessionStepId { get; set; }
+        public int EDISessionId { get; set; }
+        public string EDISessionStageId { get; set; }
         public bool Error { get; set; }
-        public int ClaimRunID { get; set; }
-        public int StatementRunID { get; set; }
-        public int EDIInboxID { get; set; }
+        public int ClaimRunId { get; set; }
+        public int StatementRunId { get; set; }
+        public int EDIInboxId { get; set; }
         public string Message { get; set; }
         public string Filename { get; set; }
 
