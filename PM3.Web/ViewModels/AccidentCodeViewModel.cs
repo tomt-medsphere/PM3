@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace PM3.Model.Models
+namespace PM3.Web.ViewModels
 {
-    public class AccidentCode
+    public class AccidentCodeViewModel
     {
         public string AccidentCodeID { get; set; }
         public string Description { get; set; }
-
-        // children
-        public virtual List<Charge> Charges { get; set; }
     }
 }
