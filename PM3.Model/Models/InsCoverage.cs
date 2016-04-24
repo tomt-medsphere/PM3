@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
@@ -19,5 +20,8 @@ namespace PM3.Model.Models
         public virtual Patient Patient { get; set; }
         public virtual InsPolicy InsPolicy { get; set; }
         public virtual RelationshipCode RelationshipCode { get; set; }
+
+        // childre
+        public virtual List<EDI270> EDI270s { get; set; }
     }
 }

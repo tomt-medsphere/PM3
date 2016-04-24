@@ -11,6 +11,7 @@ namespace PM3.Service
         IEnumerable<AccidentCode> GetAccidentCodes();
         AccidentCode GetAccidentCode(string id);
         void CreateAccidentCode(AccidentCode accidentcode);
+        void Update(AccidentCode accidentCode);
         void SaveAccidentCode();
     }
 
@@ -33,12 +34,17 @@ namespace PM3.Service
         }
         public AccidentCode GetAccidentCode(string id)
         {
-            var accidentcode = _accidentCodeRepository.GetById(id);
-            return accidentcode;
+            var accidentCode = _accidentCodeRepository.GetById(id);
+            return accidentCode;
         }
         public void CreateAccidentCode(AccidentCode accidentCode)
         {
             _accidentCodeRepository.Add(accidentCode);
+        }
+
+        public void Update(AccidentCode accidentCode)
+        {
+            _accidentCodeRepository.Update(accidentCode);
         }
         public void SaveAccidentCode()
         {

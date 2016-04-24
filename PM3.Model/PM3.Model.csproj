@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\AccidentCodeMetadata.cs" />
     <Compile Include="Models\AccidentCode.cs" />
     <Compile Include="Models\BillingAccount.cs" />
     <Compile Include="Models\BillingAccountType.cs" />
@@ -63,6 +65,12 @@
     <Compile Include="Models\ClaimRunStatus.cs" />
     <Compile Include="Models\ClosingRun.cs" />
     <Compile Include="Models\CMSSpeciality.cs" />
+    <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\DocumentCategory.cs" />
+    <Compile Include="Models\DocumentCategoryMetadata.cs" />
+    <Compile Include="Models\DocumentMetadata.cs" />
+    <Compile Include="Models\DocumentType.cs" />
+    <Compile Include="Models\DocumentTypeMetadata.cs" />
     <Compile Include="Models\EDI270.cs" />
     <Compile Include="Models\EDI277.cs" />
     <Compile Include="Models\EDI277STCAction.cs" />

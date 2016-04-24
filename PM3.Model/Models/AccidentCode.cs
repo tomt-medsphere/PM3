@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace PM3.Model.Models
 {
-    public class AccidentCode
+    [MetadataType(typeof(AccidentCodeMetadata))]
+    public partial class AccidentCode
     {
         public string AccidentCodeId { get; set; }
         public string Description { get; set; }

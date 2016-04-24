@@ -38,7 +38,7 @@ namespace PM3.Data.Infrastructure
 
         public virtual void Update(T entity)
         {
-            _dbSet.Attach(entity);
+            //_dbSet.Attach(entity);
             _dataContext.Entry(entity).State = EntityState.Modified;
         }
 
@@ -52,6 +52,11 @@ namespace PM3.Data.Infrastructure
             IEnumerable<T> objects = _dbSet.Where<T>(where).AsEnumerable();
             foreach (T obj in objects)
                 _dbSet.Remove(obj);
+        }
+
+        public virtual void Save()
+        {
+            _dataContext.SaveChanges();
         }
 
         public virtual T GetById(int id)

@@ -10,10 +10,10 @@ namespace PM3.Data.Configuration
             ToTable("AccidentCode");
             HasKey(p => p.AccidentCodeId);
             Property(p => p.AccidentCodeId).IsRequired().HasMaxLength(10);
-            Property(p => p.Description).IsRequired().HasMaxLength(60);
+            Property(p => p.Description).IsRequired().HasMaxLength(105);
 
             // children
-            //HasMany(c => c.Charges).WithOptional(p => p.AccidentCode);
+            HasMany(c => c.Charges).WithOptional(p => p.AccidentCode);
         }
     }
 }

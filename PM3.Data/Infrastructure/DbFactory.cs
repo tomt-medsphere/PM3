@@ -11,7 +11,8 @@
 
         protected override void DisposeCore()
         {
-            _dbContext?.Dispose();
+            if (_dbContext != null)
+                _dbContext.Dispose();
         }
     }
 }

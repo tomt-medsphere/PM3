@@ -12,8 +12,8 @@ namespace PM3.Model.Models
         public string SuffixId { get; set; }
         public string SalutationId { get; set; }
         public string Ssn { get; set; }
-        public DateTime Dob { get; set; }
-        public DateTime Dod { get; set; }
+        public DateTime? Dob { get; set; }
+        public DateTime? Dod { get; set; }
         public bool Deceased { get; set; }
         public string SexId { get; set; }
         public string MaritalStatusId { get; set; }
@@ -21,14 +21,14 @@ namespace PM3.Model.Models
         public string CdcRaceId { get; set; }
         public string CdcEthnicityId { get; set; }
         public string EmailAddress { get; set; }
-        public int EmergencyContactId { get; set; }
+        public int? EmergencyContactId { get; set; }
         public string EmergencyContactRelationshipCodeId { get; set; }
         public string EmergencyContactNote { get; set; }
-        public int GuardianId { get; set; }
+        public int? GuardianId { get; set; }
         public string GuardianRelationshipCodeId { get; set; }
-        public String GuardianNote { get; set; }
+        public string GuardianNote { get; set; }
         public string ResidentialFacilityId { get; set; }
-        public int EmployerId { get; set; }
+        public int? EmployerId { get; set; }
         public string Aka { get; set; }
         public string PreferredContactMethod { get; set; }
         public string MailingAddressStreet { get; set; }

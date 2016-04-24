@@ -4,6 +4,8 @@ using PM3.Data.Repositories;
 using PM3.Model.Models;
 using PM3.Service;
 using System;
+using System.Runtime.InteropServices.ComTypes;
+using System.Threading;
 
 namespace PM3.TestConsole
 {
@@ -23,13 +25,24 @@ namespace PM3.TestConsole
                 var acs = new AccidentCodeService(acr, ui);
                 
                 // add a code to our table
-                var ac = new AccidentCode
+                if (acs.GetAccidentCode("E") == null)
                 {
-                    AccidentCodeId = "B",
-                    Description = "B description"
-                };
-                acs.CreateAccidentCode(ac);
-                acs.SaveAccidentCode();
+                    var ac = new AccidentCode
+                    {
+                        AccidentCodeId = "E",
+                        Description = "E description"
+                    };
+                    acs.CreateAccidentCode(ac);
+                    acs.SaveAccidentCode();
+                }
+                else
+                {
+                    AccidentCode accidentCode = acs.GetAccidentCode("E");
+                    accidentCode.Description = "Some Other New description for E";
+                    acs.Update(accidentCode);
+                    acs.SaveAccidentCode();
+
+                }
 
                 // list the codes in the table         
                 var aclist = acs.GetAccidentCodes();

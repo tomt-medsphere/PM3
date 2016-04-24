@@ -23,8 +23,6 @@ namespace PM3.Data.Configuration
 
             HasOptional(p => p.Guardian).WithMany(p => p.Wards).HasForeignKey(p => p.GuardianId).WillCascadeOnDelete(false);
             HasOptional(p => p.EmergencyContact).WithMany(p => p.EmergencyCallers).HasForeignKey(p => p.EmergencyContactId).WillCascadeOnDelete(false);
-
-
         }
     }
 }

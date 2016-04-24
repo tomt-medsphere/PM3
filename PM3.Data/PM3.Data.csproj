@@ -62,6 +62,9 @@
     <Compile Include="Configuration\CDCEthnicityConfiguration.cs" />
     <Compile Include="Configuration\CDCRaceConfiguration.cs" />
     <Compile Include="Configuration\CertificateTypeConfiguration.cs" />
+    <Compile Include="Configuration\DocumentCategoryConfiguration.cs" />
+    <Compile Include="Configuration\DocumentConfiguration.cs" />
+    <Compile Include="Configuration\DocumentTypeConfiguration.cs" />
     <Compile Include="Configuration\PersonConfiguration.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />

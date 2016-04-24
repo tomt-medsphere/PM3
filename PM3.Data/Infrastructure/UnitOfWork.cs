@@ -12,7 +12,6 @@
 
         public Pm3Entities DbContext
         {
-            //get { return DbContext ?? (dbContext = dbFactory.Init()); } // bad code
             get { return _dbContext ?? (_dbContext = _dbFactory.Init()); } // good code
         }
 

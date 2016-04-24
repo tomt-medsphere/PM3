@@ -8,12 +8,12 @@ namespace PM3.Data.Infrastructure
     {
         // marks an entity as new
         void Add(T entity);
-
         // marks an entity as modified
         void Update(T entity);
-
+        // marks an entity to be removed
         void Delete(T entity);
         void Delete(Expression<Func<T, bool>> where);
+        void Save();
 
         // get entity by ID
         T GetById(int id);
