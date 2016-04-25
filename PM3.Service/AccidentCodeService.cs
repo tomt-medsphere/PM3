@@ -12,6 +12,7 @@ namespace PM3.Service
         AccidentCode GetAccidentCode(string id);
         void CreateAccidentCode(AccidentCode accidentcode);
         void Update(AccidentCode accidentCode);
+        void Delete(AccidentCode accidentCode);
         void SaveAccidentCode();
     }
 
@@ -46,6 +47,12 @@ namespace PM3.Service
         {
             _accidentCodeRepository.Update(accidentCode);
         }
+
+        public void Delete(AccidentCode accidentCode)
+        {
+            _accidentCodeRepository.Delete(accidentCode);
+        }
+
         public void SaveAccidentCode()
         {
             _unitOfWork.Commit();
