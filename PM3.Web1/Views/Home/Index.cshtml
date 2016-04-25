@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "PM3 Home Page";
+}
+
+<div class="jumbotron">
+    <h1>PM3</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Accident Codes</h2>
+        @Html.ActionLink("Accident Codes", "Index", "AccidentCode")
+    </div>
+    <div class="col-md-4">
+        <h2>Document Categories</h2>
+        @Html.ActionLink("Document Categories", "Index", "DocumentCategory")
+    </div>
+</div>

@@ -1,8 +1,10 @@
-﻿using MySql.Data.Entity;
+﻿using System;
+using MySql.Data.Entity;
 using PM3.Data.Configuration;
 using PM3.Model.Models;
 using System.Data.Entity;
 using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace PM3.Data
 {
@@ -15,10 +17,20 @@ namespace PM3.Data
 
         public DbSet<AccidentCode> AccidentCode { get; set; }
         public DbSet<DocumentCategory> DocumentCategory { get; set; }
+        public DbSet<DocumentType> DocumentType { get; set; }
 
         public virtual void Commit()
         {
-            SaveChanges();
+            try
+            {
+                SaveChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"exception: {e}");
+                Console.ReadLine();
+                throw;
+            }
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

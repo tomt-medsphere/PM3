@@ -17,8 +17,8 @@ namespace PM3.Data.Configuration
             Property(p => p.DocumentCategoryId).IsRequired().HasMaxLength(10);
             Property(p => p.Description).IsRequired().HasMaxLength(100);
 
-            //// children
-            //HasMany(c => c.DocumentTypes).WithRequired(p => p.DocumentCategory);
+            // children
+            HasMany(c => c.DocumentTypes).WithRequired(p => p.DocumentCategory);
         }
     }
 }
