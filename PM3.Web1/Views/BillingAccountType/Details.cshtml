@@ -1,0 +1,58 @@
+﻿@model PM3.Model.Models.BillingAccountType
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>BillingAccountType</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Billable)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Billable)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Dunning)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Dunning)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Inactive)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Inactive)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.BillingAccountTypeId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

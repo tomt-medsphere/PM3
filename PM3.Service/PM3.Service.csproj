@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccidentCodeService.cs" />
+    <Compile Include="BillingAccountTypeService.cs" />
     <Compile Include="DocumentCategoryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
