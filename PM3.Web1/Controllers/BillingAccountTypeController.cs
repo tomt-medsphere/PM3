@@ -15,7 +15,7 @@ namespace PM3.Web1.Controllers
     public class BillingAccountTypeController : Controller
     {
         // initialize the service object
-        private IBillingAccountTypeService _billingAccountTypeService;
+        private readonly IBillingAccountTypeService _billingAccountTypeService;
 
         public BillingAccountTypeController(IBillingAccountTypeService billingAccountTypeService)
         {

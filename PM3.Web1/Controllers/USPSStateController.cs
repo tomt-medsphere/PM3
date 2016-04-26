@@ -7,18 +7,25 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using PM3.Model.Models;
+using PM3.Service;
 using PM3.Web1.Models;
 
 namespace PM3.Web1.Controllers
 {
-    public class USPSStatesController : Controller
+    public class USPSStateController : Controller
     {
-        private PM3Web1Context db = new PM3Web1Context();
+        private IUSPSStateService _uspsStateService;
+
+        public USPSStateController(IUSPSStateService uspsStateService)
+        {
+            _uspsStateService = uspsStateService;
+        }
+
 
         // GET: USPSStates
         public ActionResult Index()
         {
-            return View(db.USPSStates.ToList());
+            return View(_uspsStateService.GetUSPSStates().ToList());
         }
 
         // GET: USPSStates/Details/5
@@ -28,12 +35,12 @@ namespace PM3.Web1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            USPSState uSPSState = db.USPSStates.Find(id);
-            if (uSPSState == null)
+            USPSState uspsState = _uspsStateService.GetUSPSState(id);
+            if (uspsState == null)
             {
                 return HttpNotFound();
             }
-            return View(uSPSState);
+            return View(uspsState);
         }
 
         // GET: USPSStates/Create
@@ -47,16 +54,16 @@ namespace PM3.Web1.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "USPSStateId,Name")] USPSState uSPSState)
+        public ActionResult Create([Bind(Include = "USPSStateId,Name")] USPSState uspsState)
         {
             if (ModelState.IsValid)
             {
-                db.USPSStates.Add(uSPSState);
-                db.SaveChanges();
+                _uspsStateService.CreateUSPSState(uspsState);
+                _uspsStateService.SaveUSPSState();
                 return RedirectToAction("Index");
             }
 
-            return View(uSPSState);
+            return View(uspsState);
         }
 
         // GET: USPSStates/Edit/5
@@ -66,12 +73,12 @@ namespace PM3.Web1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            USPSState uSPSState = db.USPSStates.Find(id);
-            if (uSPSState == null)
+            USPSState uspsState = _uspsStateService.GetUSPSState(id);
+            if (uspsState == null)
             {
                 return HttpNotFound();
             }
-            return View(uSPSState);
+            return View(uspsState);
         }
 
         // POST: USPSStates/Edit/5
@@ -79,15 +86,15 @@ namespace PM3.Web1.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "USPSStateId,Name")] USPSState uSPSState)
+        public ActionResult Edit([Bind(Include = "USPSStateId,Name")] USPSState uspsState)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(uSPSState).State = EntityState.Modified;
-                db.SaveChanges();
+                _uspsStateService.Update(uspsState);
+                _uspsStateService.SaveUSPSState();
                 return RedirectToAction("Index");
             }
-            return View(uSPSState);
+            return View(uspsState);
         }
 
         // GET: USPSStates/Delete/5
@@ -97,12 +104,12 @@ namespace PM3.Web1.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            USPSState uSPSState = db.USPSStates.Find(id);
-            if (uSPSState == null)
+            USPSState uspsState = _uspsStateService.GetUSPSState(id);
+            if (uspsState == null)
             {
                 return HttpNotFound();
             }
-            return View(uSPSState);
+            return View(uspsState);
         }
 
         // POST: USPSStates/Delete/5
@@ -110,9 +117,9 @@ namespace PM3.Web1.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(string id)
         {
-            USPSState uSPSState = db.USPSStates.Find(id);
-            db.USPSStates.Remove(uSPSState);
-            db.SaveChanges();
+            USPSState uspsState = _uspsStateService.GetUSPSState(id);
+            _uspsStateService.Delete(uspsState);
+            _uspsStateService.SaveUSPSState();
             return RedirectToAction("Index");
         }
 
@@ -120,7 +127,7 @@ namespace PM3.Web1.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                //db.Dispose();
             }
             base.Dispose(disposing);
         }

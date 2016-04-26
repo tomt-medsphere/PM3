@@ -79,6 +79,7 @@
     <Compile Include="Repositories\AccidentCodeRepository.cs" />
     <Compile Include="Repositories\BillingAccountTypeRepository.cs" />
     <Compile Include="Repositories\DocumentCategoryRepository.cs" />
+    <Compile Include="Repositories\USPSStateRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

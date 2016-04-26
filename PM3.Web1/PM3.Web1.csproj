@@ -155,7 +155,7 @@
     <Compile Include="Controllers\BillingAccountTypeController.cs" />
     <Compile Include="Controllers\DocumentCategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\USPSStatesController.cs" />
+    <Compile Include="Controllers\USPSStateController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -173,11 +173,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\DocumentCategory\Index.cshtml" />
     <Content Include="Views\DocumentCategory\Create.cshtml" />
-    <Content Include="Views\USPSStates\Create.cshtml" />
-    <Content Include="Views\USPSStates\Delete.cshtml" />
-    <Content Include="Views\USPSStates\Details.cshtml" />
-    <Content Include="Views\USPSStates\Edit.cshtml" />
-    <Content Include="Views\USPSStates\Index.cshtml" />
+    <Content Include="Views\USPSState\Create.cshtml" />
+    <Content Include="Views\USPSState\Delete.cshtml" />
+    <Content Include="Views\USPSState\Details.cshtml" />
+    <Content Include="Views\USPSState\Edit.cshtml" />
+    <Content Include="Views\USPSState\Index.cshtml" />
     <Content Include="Views\BillingAccountType\Create.cshtml" />
     <Content Include="Views\BillingAccountType\Delete.cshtml" />
     <Content Include="Views\BillingAccountType\Details.cshtml" />
