@@ -8,12 +8,16 @@ namespace PM3.Data.Configuration
         public CARActionConfiguation()
         {
             ToTable("CARAction");
-            HasKey(p => p.CarCodeId);
-            Property(p => p.CarCodeId).IsRequired().HasMaxLength(10);
-            Property(p => p.ShortDescription).IsRequired().HasMaxLength(60);
+            HasKey(p => p.CARCodeId);
+            Property(p => p.CARCodeId).IsRequired().HasMaxLength(2);
+            Property(p => p.ShortDescription).IsRequired().HasMaxLength(30);
             Property(p => p.SetReview).IsRequired();
-            Property(p => p.CreateTxNote).IsRequired();
-            Property(p => p.TxCodeId).HasMaxLength(10);
+            Property(p => p.CreateTXNote).IsRequired();
+            Property(p => p.TXCodeId).HasMaxLength(10);
+
+            // parents
+            HasRequired(p => p.CARCode).WithMany(p => p.CARActions).HasForeignKey(p => p.CARCodeId).WillCascadeOnDelete(false);
+            HasOptional(p => p.TXCode).WithMany(p => p.CARActions).HasForeignKey(p => p.TXCodeId).WillCascadeOnDelete(false);
         }
     }
 }

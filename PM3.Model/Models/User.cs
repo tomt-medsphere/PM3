@@ -1,4 +1,6 @@
-﻿namespace PM3.Model.Models
+﻿using System.Collections.Generic;
+
+namespace PM3.Model.Models
 {
     public class User
     {
@@ -17,5 +19,8 @@
         public bool Inactive { get; set; }
         public bool Management { get; set; }
         public bool PlanProfilesExpert { get; set; }
+
+        // children
+        public virtual List<Charge> Charges { get; set; }
     }
 }

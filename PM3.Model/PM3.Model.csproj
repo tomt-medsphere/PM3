@@ -47,7 +47,7 @@
     <Compile Include="Models\BillingAccountType.cs" />
     <Compile Include="Models\CAGCode.cs" />
     <Compile Include="Models\CARAction.cs" />
-    <Compile Include="Models\CAR.cs" />
+    <Compile Include="Models\CARCode.cs" />
     <Compile Include="Models\CDCEthnicity.cs" />
     <Compile Include="Models\CDCRace.cs" />
     <Compile Include="Models\CertificateType.cs" />
@@ -161,10 +161,10 @@
     <Compile Include="Models\RARC.cs" />
     <Compile Include="Models\RelationshipCode.cs" />
     <Compile Include="Models\TaxonomyCode.cs" />
-    <Compile Include="Models\Tx.cs" />
-    <Compile Include="Models\TxBatch.cs" />
-    <Compile Include="Models\TxCAS.cs" />
-    <Compile Include="Models\TxCode.cs" />
+    <Compile Include="Models\TX.cs" />
+    <Compile Include="Models\TXBatch.cs" />
+    <Compile Include="Models\TXCAS.cs" />
+    <Compile Include="Models\TXCode.cs" />
     <Compile Include="Models\TxHCPCSModifier.cs" />
     <Compile Include="Models\TxMaster.cs" />
     <Compile Include="Models\TxMasterRARC.cs" />

@@ -20,7 +20,7 @@ namespace PM3.Model.Models
         public virtual List<Claim> Claims { get; set; }
         public virtual List<PrepRequest> PrepRequests { get; set; }
         public virtual List<PrepRunPrepError> PrepRunPrepErrors { get; set; }
-        public virtual List<Tx> Tx { get; set; }
+        public virtual List<TX> Tx { get; set; }
 
     }
 }

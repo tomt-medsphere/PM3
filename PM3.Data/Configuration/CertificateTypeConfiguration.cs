@@ -10,7 +10,11 @@ namespace PM3.Data.Configuration
             ToTable("CertificateType");
             HasKey(p => p.CertificateTypeId);
             Property(p => p.CertificateTypeId).IsRequired().HasMaxLength(10);
-            Property(p => p.Description).IsRequired().HasMaxLength(30);
+            Property(p => p.Description).IsRequired().HasMaxLength(100);
+
+            // children
+            HasMany(c => c.ChargeServices).WithOptional(c => c.CertificateType);
+            HasMany(c => c.Services).WithOptional(c => c.CertificateType);
         }
     }
 }

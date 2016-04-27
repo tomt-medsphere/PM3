@@ -19,8 +19,8 @@ namespace PM3.Model.Models
         // external provider
         public string RefProviderId { get; set; }
         public DateTime? ReferralDate { get; set; }
-        public string Pcpid { get; set; }
-        public DateTime? PcpLastSeen { get; set; }
+        public string PCPId { get; set; }
+        public DateTime? PCPLastSeen { get; set; }
         public string NatureOfConditionId { get; set; }
         public DateTime? LastXRay { get; set; }
         
@@ -42,14 +42,14 @@ namespace PM3.Model.Models
         public DateTime? AccidentDateTime { get; set; }
       
         // misc
-        public string CliaTypeId { get; set; }
-        public string CliaNumber { get; set; }
+        public string CLIATypeId { get; set; }
+        public string CLIANumber { get; set; }
         public string MammographyCert { get; set; }
         public string PriorAuthCode { get; set; }
         public bool Pregnant { get; set; }
-        public DateTime? Lmp { get; set; }
-        public DateTime? Edc { get; set; }
-        public string EpsdtCodeId { get; set; }
+        public DateTime? LMP { get; set; }
+        public DateTime? EDC { get; set; }
+        public string EPSDTCodeId { get; set; }
      
         // system stuff
         public int ChargeBatchId { get; set; }
@@ -69,11 +69,11 @@ namespace PM3.Model.Models
         public virtual PWKTransmissionCode PWKTransmissinoCode { get; set; }
         public virtual PWKTypeCode PWKTypeCode { get; set; }
         public virtual ExtProvider RefProvider { get; set; } 
-        public virtual ExtProvider Pcp { get; set; }
+        public virtual ExtProvider PCP { get; set; }
         public virtual NatureOfCondition NatureOfCondition { get; set; }
         public virtual AccidentCode AccidentCode { get; set; }
         public virtual USPSState AccidentState { get; set; }
-        public virtual EpsdtCode EpsdtCode { get; set; }
+        public virtual EPSDTCode EPSDTCode { get; set; }
         public virtual ChargeBatch ChargeBatch { get; set; }
         public virtual User User { get; set; }
         public virtual ChargeInsCoverage CurrentPayerCoverage { get; set; }

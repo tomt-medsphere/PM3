@@ -54,7 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuration\AccidentCodeConfiguation.cs" />
-    <Compile Include="Configuration\BillingAccountConfiguation.cs" />
+    <Compile Include="Configuration\BillingAccountConfiguration.cs" />
     <Compile Include="Configuration\BillingAccountTypeConfiguration.cs" />
     <Compile Include="Configuration\CAGCodeConfiguration.cs" />
     <Compile Include="Configuration\CARActionConfiguration.cs" />
@@ -62,6 +62,7 @@
     <Compile Include="Configuration\CDCEthnicityConfiguration.cs" />
     <Compile Include="Configuration\CDCRaceConfiguration.cs" />
     <Compile Include="Configuration\CertificateTypeConfiguration.cs" />
+    <Compile Include="Configuration\ChargeConfiguration.cs" />
     <Compile Include="Configuration\DocumentCategoryConfiguration.cs" />
     <Compile Include="Configuration\DocumentConfiguration.cs" />
     <Compile Include="Configuration\DocumentTypeConfiguration.cs" />

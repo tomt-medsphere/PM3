@@ -2,9 +2,9 @@
 
 namespace PM3.Model.Models
 {
-    public class CdcEthnicity
+    public class CDCEthnicity
     {
-        public string CdcEthnicityId { get; set; }
+        public string CDCEthnicityId { get; set; }
         public string HCode { get; set; }
         public string Description { get; set; }
         public string MuCode { get; set; }

@@ -2,10 +2,10 @@
 
 namespace PM3.Model.Models
 {
-    public class TxBatch
+    public class TXBatch
     {
-        public int TxBatchId { get; set; }
-        public string TxCodeId { get; set; }
+        public int TXBatchId { get; set; }
+        public string TXCodeId { get; set; }
         public string Description { get; set; }
         public string InsPlanId { get; set; }
         public DateTime AdjudicationDate { get; set; }
@@ -23,7 +23,7 @@ namespace PM3.Model.Models
         public string PostingPeriodId { get; set; }
 
         // parents
-        public virtual TxCode TxCode { get; set; }
+        public virtual TXCode TXCode { get; set; }
         public virtual InsPlan InsPlan { get; set; }
         public virtual User User { get; set; }
         public virtual PaymentForm PaymentForm { get; set;}

@@ -9,6 +9,6 @@ namespace PM3.Model
         public string Description { get; set; }
 
         // children
-        public virtual List<TxCode> TxCodes { get; set; }
+        public virtual List<TXCode> TxCodes { get; set; }
     }
 }

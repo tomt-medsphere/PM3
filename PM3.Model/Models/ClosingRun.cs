@@ -14,7 +14,7 @@ namespace PM3.Model.Models
         public virtual User User { get; set; }
 
         // children
-        public virtual List<TxBatch> TxBatches { get; set; }
+        public virtual List<TXBatch> TxBatches { get; set; }
         public virtual List<ChargeBatch> ChargeBatches { get; set; }
     }
 }

@@ -28,7 +28,7 @@ namespace PM3.Model.Models
 
         // parents
         public virtual EDIInbox EDIInbox { get; set; }
-        public virtual TxBatch TxBatch { get; set; }
+        public virtual TXBatch TxBatch { get; set; }
 
         // children
         public virtual List<EDI835Log> EDI835Log { get; set; }

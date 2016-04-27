@@ -63,7 +63,7 @@ namespace PM3.Model.Models
         public virtual List<ChargeServiceICD> ChargeServiceICD { get; set; }
         public virtual List<PrepError> PrepErrors { get; set; }
         public virtual List< PrepRunPrepError> PrepRunPrepErrors { get; set; }
-        public virtual List<Tx> Tx { get; set; }
+        public virtual List<TX> Tx { get; set; }
         public virtual List<EDI277STC> EDI277STC { get; set; }
     }
 }

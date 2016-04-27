@@ -18,8 +18,8 @@ namespace PM3.Model.Models
         public string SexId { get; set; }
         public string MaritalStatusId { get; set; }
         public string LanguageId { get; set; }
-        public string CdcRaceId { get; set; }
-        public string CdcEthnicityId { get; set; }
+        public string CDCRaceId { get; set; }
+        public string CDCEthnicityId { get; set; }
         public string EmailAddress { get; set; }
         public int? EmergencyContactId { get; set; }
         public string EmergencyContactRelationshipCodeId { get; set; }
@@ -46,8 +46,8 @@ namespace PM3.Model.Models
         public virtual RelationshipCode GuardianRelationship { get; set; }
         public virtual MaritalStatus MaritalStatus { get; set; }
         public virtual Language Language { get; set; }
-        public virtual CdcRace CdcRace { get; set; }
-        public virtual  CdcEthnicity CdcEthnicity { get; set; }
+        public virtual CDCRace CDCRace { get; set; }
+        public virtual  CDCEthnicity CDCEthnicity { get; set; }
         public virtual USPSState USPSState { get; set; }
         public virtual USPSCountry USPSCountry { get; set; }
         public virtual Salutation Salutation { get; set; }

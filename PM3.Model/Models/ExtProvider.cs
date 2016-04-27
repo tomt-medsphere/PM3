@@ -29,7 +29,7 @@ namespace PM3.Model.Models
         public virtual List<Patient> PcpPatients { get; set; }
         public virtual List<ExtProviderPhone> ExtProviderPhones { get; set; }
         public virtual List<Charge> RefCharges { get; set; }
-        public virtual List<Charge> PcpCharges { get; set; }
+        public virtual List<Charge> PCPCharges { get; set; }
         public virtual List<ChargeService> OrderingChargeServices { get; set; }
 
     }

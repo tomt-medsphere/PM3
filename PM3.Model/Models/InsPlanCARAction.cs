@@ -15,7 +15,7 @@ namespace PM3.Model.Models
         public DateTime EndDate { get; set; }
 
         // parents
-        public virtual Car Car { get; set; }
+        public virtual CARCode CARCode { get; set; }
         public virtual InsPlan InsPlan { get; set; }
     }
 }

@@ -2,9 +2,9 @@
 
 namespace PM3.Model.Models
 {
-    public class CdcRace
+    public class CDCRace
     {
-        public string CdcRaceId { get; set; }
+        public string CDCRaceId { get; set; }
         public string HCode { get; set; }
         public string Description { get; set; }
         public string MuCode { get; set; }

@@ -2,9 +2,9 @@
 
 namespace PM3.Model.Models
 {
-    public class EpsdtCode
+    public class EPSDTCode
     {
-        public string EpsdtCodeId { get; set; }
+        public string EPSDTCodeId { get; set; }
         public string Description { get; set; }
 
         // children

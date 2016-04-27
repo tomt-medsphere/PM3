@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
@@ -29,5 +30,8 @@ namespace PM3.Model.Models
         public virtual InfoReleaseType InfoReleaseType { get; set; }
         public virtual PayProviderType PayProviderType { get; set; }
         public virtual ExtProvider ExternalProvider { get; set; }
+
+        // childre
+        public virtual List<Charge> Charges { get; set; }
     }
 }

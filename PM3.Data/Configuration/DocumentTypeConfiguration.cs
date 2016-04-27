@@ -19,7 +19,7 @@ namespace PM3.Data.Configuration
             Property(p => p.Description).IsRequired().HasMaxLength(100);
 
             //// parents
-            //HasRequired(p => p.DocumentCategory).WithMany(p => p.DocumentTypes).HasForeignKey(p => p.DocumentCategoryId).WillCascadeOnDelete(false);
+            HasRequired(p => p.DocumentCategory).WithMany(p => p.DocumentTypes).HasForeignKey(p => p.DocumentCategoryId).WillCascadeOnDelete(false);
 
             //// children
         }

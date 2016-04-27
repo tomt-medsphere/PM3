@@ -2,12 +2,12 @@
 
 namespace PM3.Model.Models
 {
-    public class TxType
+    public class TXType
     {
-        public string TxTypeId { get; set; }
+        public string TXTypeId { get; set; }
         public string Description { get; set; }
 
         // children
-        public virtual List<TxCode> TxCodes { get; set; }
+        public virtual List<TXCode> TXCodes { get; set; }
     }
 }

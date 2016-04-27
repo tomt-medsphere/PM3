@@ -3,15 +3,15 @@ using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
-    public class CagCode
+    public class CAGCode
     {
-        public string CagCodeId { get; set; }
+        public string CAGCodeId { get; set; }
         public string Description { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime? EndDate { get; set; }
 
         // children
-        public virtual List<Tx> Tx { get; set; }
-        public virtual List<TxCAS> TxCAS { get; set; }
+        public virtual List<TX> TX { get; set; }
+        public virtual List<TXCAS> TXCAS { get; set; }
     }
 }
