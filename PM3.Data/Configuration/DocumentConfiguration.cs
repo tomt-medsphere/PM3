@@ -15,7 +15,7 @@ namespace PM3.Data.Configuration
         {
             ToTable("Document");
             HasKey(p => p.DocumentId);
-            Property(p => p.DocumentId).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Computed);
+            Property(p => p.DocumentId).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(p => p.DocumentTypeId).IsRequired().HasMaxLength(10);
             Property(p => p.UserId).IsRequired().HasMaxLength(255);
 

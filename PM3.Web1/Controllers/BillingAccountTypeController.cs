@@ -8,7 +8,6 @@ using System.Web;
 using System.Web.Mvc;
 using PM3.Model.Models;
 using PM3.Service;
-using PM3.Web1.Models;
 
 namespace PM3.Web1.Controllers
 {
