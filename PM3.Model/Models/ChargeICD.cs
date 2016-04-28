@@ -4,7 +4,7 @@
     {
         public int ChargeICDId { get; set; }
         public int ChargeId { get; set; }
-        public string ICDId { get; set; }
+        public int ICDId { get; set; }
         public int Sequence { get; set; }
 
         // parents

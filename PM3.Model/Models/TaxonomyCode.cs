@@ -4,6 +4,9 @@
     {
         public string TaxonomyCodeId { get; set; }
         public string Classification { get; set; }
-        public string Specialization { get; set; }
+        public string CMSSpecialityId { get; set; }
+
+        // parents
+        public virtual CMSSpeciality CMSSpeciality { get; set; }
     }
 }

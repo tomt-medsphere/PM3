@@ -25,7 +25,7 @@ namespace PM3.Model.Models
         public virtual ClaimRunStatus ClaimRunStatus { get; set; }
 
         // children
-        public virtual List<EDI277> EDI277 { get; set; }
+        public virtual List<EDI277> EDI277s { get; set; }
         public virtual List<EDISessionStep> EDISessionSteps { get; set; }
         public virtual List<Claim> Claims { get; set; }
     }

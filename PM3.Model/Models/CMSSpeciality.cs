@@ -2,9 +2,9 @@
 
 namespace PM3.Model.Models
 {
-    public class CmsSpeciality
+    public class CMSSpeciality
     {
-        public string CmsSpecialityId { get; set; }
+        public string CMSSpecialityId { get; set; }
         public string Description { get; set; }
 
         // children

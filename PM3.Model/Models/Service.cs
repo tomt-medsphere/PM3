@@ -37,5 +37,7 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<ServiceHCPCSModifier> ServiceHCPCSModifiers { get; set; }
+        public virtual List<ChargeService> ChargeServices { get; set; }
+
     }
 }

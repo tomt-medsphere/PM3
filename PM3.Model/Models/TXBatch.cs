@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
@@ -30,5 +31,8 @@ namespace PM3.Model.Models
         public virtual PracticeSite PracticeSite { get; set; }
         public virtual ClosingRun ClosingRun { get; set; }
         public virtual PostingPeriod PostingPeriod { get; set; }
+
+        // children
+        public virtual List<EDI835> EDI835s { get; set; }
     }
 }

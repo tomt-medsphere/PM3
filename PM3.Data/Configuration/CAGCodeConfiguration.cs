@@ -11,10 +11,7 @@ namespace PM3.Data.Configuration
         {
             ToTable("CAGCode");
             HasKey(p => p.CAGCodeId);
-            Property(p => p.CAGCodeId)
-                .IsRequired()
-                .HasMaxLength(2)
-                .HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute() {IsClustered = true}));
+            Property(p => p.CAGCodeId).IsRequired().HasMaxLength(2); //.HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute() {IsClustered = true}));
             Property(p => p.Description).IsRequired().HasMaxLength(100);
             Property(p => p.StartDate).IsRequired();
             Property(p => p.EndDate).IsOptional();

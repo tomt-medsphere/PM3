@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using PM3.Model.Models;
 
 namespace PM3.Data.Configuration
@@ -52,10 +47,29 @@ namespace PM3.Data.Configuration
             Property(p => p.ChargeServiceStatusDate).IsRequired();
 
             // parents
-            HasRequired(p => p.Charge).WithMany(p => p.ChargeServices);
-            HasRequired(p => p.ChargeServiceStatus).WithMany(p => p.ChargeServices);
-            HasOptional(p => p.MEAQualifier).WithMany(p => p.ChargeServices);
+            HasRequired(p => p.Charge).WithMany(p => p.ChargeServices).HasForeignKey(p => p.ChargeId).WillCascadeOnDelete(false);
+            HasRequired(p => p.ChargeServiceStatus).WithMany(p => p.ChargeServices).HasForeignKey(p => p.ChargeServiceStatusId).WillCascadeOnDelete(false);
+            HasOptional(p => p.MEAQualifier).WithMany(p => p.ChargeServices).HasForeignKey(p => p.MEAQualifierId).WillCascadeOnDelete(false);
+            HasOptional(p => p.MEAReference).WithMany(p => p.ChargeServices).HasForeignKey(p => p.MEAReferenceId).WillCascadeOnDelete(false);
+            HasOptional(p => p.MeasurementUnit).WithMany(p => p.ChargeServices).HasForeignKey(p => p.MeasurementUnitId).WillCascadeOnDelete(false);
+            HasRequired(p => p.Service).WithMany(p => p.ChargeServices).HasForeignKey(p => p.ServiceId).WillCascadeOnDelete(false);
+            HasRequired(p => p.Patient).WithMany(p => p.ChargeServices).HasForeignKey(p => p.PatientId).WillCascadeOnDelete(false);
+            HasRequired(p => p.BillingAccount).WithMany(p => p.ChargeServices).HasForeignKey(p => p.BillingAccountId).WillCascadeOnDelete(false);
+            HasOptional(p => p.HCPCS).WithMany(p => p.HCPCSChargeServices).HasForeignKey(p => p.HCPCSId).WillCascadeOnDelete(false);
+            HasOptional(p => p.HCPCSL2).WithMany(p => p.HCPCSL2ChargeServices).HasForeignKey(p => p.HCPCSL2Id).WillCascadeOnDelete(false);
+            HasRequired(p => p.POS).WithMany(p => p.ChargeServices).HasForeignKey(p => p.POSId).WillCascadeOnDelete(false);
+            HasRequired(p => p.RenderingProvider).WithMany(p => p.RenderingChargeServices).HasForeignKey(p => p.RenderingProviderId).WillCascadeOnDelete(false);
+            HasOptional(p => p.SupervisingProvider).WithMany(p => p.SupervisingChargeServices).HasForeignKey(p => p.SupervisingProviderId).WillCascadeOnDelete(false);
+            HasOptional(p => p.OrderingProvider).WithMany(p => p.OrderingChargeServices).HasForeignKey(p => p.OrderingProviderId).WillCascadeOnDelete(false);
+            HasOptional(p => p.CertificateType).WithMany(p => p.ChargeServices).HasForeignKey(p => p.CertificateTypeId).WillCascadeOnDelete(false);
 
+            // children
+            HasMany(c => c.ChargeServiceMods).WithRequired(c => c.ChargeService);
+            HasMany(c => c.ChargeServiceICDs).WithRequired(c => c.ChargeService);
+            HasMany(c => c.PrepErrors).WithOptional(c => c.ChargeService);
+            HasMany(c => c.PrepRunPrepErrors).WithOptional(c => c.ChargeService);
+            HasMany(c => c.TXs).WithRequired(c => c.ChargeService);
+            HasMany(c => c.EDI277STCs).WithOptional(c => c.ChargeService);
         }
     }
 }

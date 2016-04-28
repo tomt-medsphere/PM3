@@ -58,7 +58,7 @@ namespace PM3.Model.Models
         public DateTime EntryDateTime { get; set; }
         public string UserId { get; set; }
         public bool ChargePrepped { get; set; }
-        public string CurrentPayerCoverageId { get; set; }
+        public int? CurrentPayerCoverageId { get; set; }
 
         // parents
         public virtual Patient Patient { set; get; }
@@ -76,7 +76,6 @@ namespace PM3.Model.Models
         public virtual EPSDTCode EPSDTCode { get; set; }
         public virtual ChargeBatch ChargeBatch { get; set; }
         public virtual User User { get; set; }
-        public virtual ChargeInsCoverage CurrentPayerCoverage { get; set; }
 
         //children
         public virtual List<ChargeICD> ChargeICDs { get; set; }
@@ -89,5 +88,9 @@ namespace PM3.Model.Models
         public virtual List<PrepRunPrepError> PrepRunPrepErrors { get; set; }
         public virtual List<PatientNote> PatientNotes { get; set; }
         public virtual List<EDI277STC> EDI277STCs { get; set; }
+
+        // special one to one/zero currentpayercoverage
+        public virtual ChargeInsCoverage CurrentPayerCoverage { get; set; }
+
     }
 }

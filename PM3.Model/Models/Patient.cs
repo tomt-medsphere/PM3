@@ -31,7 +31,9 @@ namespace PM3.Model.Models
         public virtual PayProviderType PayProviderType { get; set; }
         public virtual ExtProvider ExternalProvider { get; set; }
 
-        // childre
+        // children
         public virtual List<Charge> Charges { get; set; }
+        public virtual List<ChargeService> ChargeServices { get; set; }
+
     }
 }

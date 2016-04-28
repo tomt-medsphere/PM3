@@ -60,10 +60,10 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<ChargeServiceMod> ChargeServiceMods { get; set; }
-        public virtual List<ChargeServiceICD> ChargeServiceICD { get; set; }
+        public virtual List<ChargeServiceICD> ChargeServiceICDs { get; set; }
         public virtual List<PrepError> PrepErrors { get; set; }
         public virtual List< PrepRunPrepError> PrepRunPrepErrors { get; set; }
-        public virtual List<TX> TX { get; set; }
-        public virtual List<EDI277STC> EDI277STC { get; set; }
+        public virtual List<TX> TXs { get; set; }
+        public virtual List<EDI277STC> EDI277STCs { get; set; }
     }
 }

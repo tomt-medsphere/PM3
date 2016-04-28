@@ -15,12 +15,14 @@ namespace PM3.Model.Models
         public virtual InsCoverage InsCoverage { get; set; }
 
         // children
-        public virtual List<Charge> Charges { get; set; }
         public virtual List<PrepError> PrepErrors { get; set; }
         public virtual List<Claim> Claims { get; set; }
         public virtual List<PrepRequest> PrepRequests { get; set; }
         public virtual List<PrepRunPrepError> PrepRunPrepErrors { get; set; }
-        public virtual List<TX> Tx { get; set; }
+        public virtual List<TX> TXs { get; set; }
+
+        // special one to one/zero currentpayercoverage
+        public virtual Charge CurrentPayerCoverage { get; set; }
 
     }
 }

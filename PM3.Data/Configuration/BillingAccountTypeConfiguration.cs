@@ -11,10 +11,7 @@ namespace PM3.Data.Configuration
         {
             ToTable("BillingAccountType");
             HasKey(p => p.BillingAccountTypeId);
-            Property(p => p.BillingAccountTypeId)
-                .IsRequired()
-                .HasMaxLength(10)
-                .HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute() {IsClustered = true}));
+            Property(p => p.BillingAccountTypeId).IsRequired().HasMaxLength(10); //.HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute() {IsClustered = true}));
             Property(p => p.Description).IsRequired().HasMaxLength(100);
             Property(p => p.Billable).IsRequired();
             Property(p => p.Dunning).IsRequired();

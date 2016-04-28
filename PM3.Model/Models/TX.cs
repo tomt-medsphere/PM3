@@ -9,7 +9,7 @@ namespace PM3.Model.Models
         public int TXMasterId { get; set; }
         public string ProviderId { get; set; }
         public int ChargeServiceId { get; set; }
-        public int ChargeInsCoverageId { get; set; }
+        public int? ChargeInsCoverageId { get; set; }
         public string InsPlanId { get; set; }
         public string TxCodeId { get; set; }
         public string PaymentFormId { get; set; }

@@ -13,7 +13,7 @@ namespace PM3.Model.Models
         // children
         public virtual List<CARAction> CARActions { get; set; }
         public virtual List<InsPlanCARAction> InsPlanCARActions { get; set; }
-        public virtual List<TX> TX { get; set; }
-        public virtual List<TXCAS> TXCAS { get; set; }
+        public virtual List<TX> TXs { get; set; }
+        public virtual List<TXCAS> TXCASs { get; set; }
     }
 }

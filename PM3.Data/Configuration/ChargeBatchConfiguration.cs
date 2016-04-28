@@ -16,7 +16,7 @@ namespace PM3.Data.Configuration
             ToTable("ChargeBatch");
             HasKey(p => p.ChargeBatchId);
             Property(p => p.ChargeBatchId).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(p => p.PostingPeriodId).IsRequired().HasMaxLength(10);
+            Property(p => p.PostingPeriodId).IsOptional().HasMaxLength(10);
             Property(p => p.PracticeSiteId).IsOptional().HasMaxLength(10);
             Property(p => p.Description).IsOptional().HasMaxLength(100);
             Property(p => p.Amount).IsOptional();
@@ -27,7 +27,7 @@ namespace PM3.Data.Configuration
             Property(p => p.UserId).IsRequired().HasMaxLength(255);
 
             // parents
-            HasRequired(p => p.PostingPeriod).WithMany(p => p.ChargeBatches).HasForeignKey(p => p.PostingPeriodId).WillCascadeOnDelete(false);
+            HasOptional(p => p.PostingPeriod).WithMany(p => p.ChargeBatches).HasForeignKey(p => p.PostingPeriodId).WillCascadeOnDelete(false);
             HasRequired(p => p.User).WithMany(p => p.ChargeBatches).HasForeignKey(p => p.UserId).WillCascadeOnDelete(false);
             HasOptional(p => p.PracticeSite).WithMany(p => p.ChargeBatches).HasForeignKey(p => p.PracticeSiteId).WillCascadeOnDelete(false);
             HasOptional(p => p.PostingPeriod).WithMany(p => p.ChargeBatches).HasForeignKey(p => p.PostingPeriodId).WillCascadeOnDelete(false);

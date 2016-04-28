@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
@@ -6,8 +7,8 @@ namespace PM3.Model.Models
     {
         public int EDI270Id { get; set; }
         public int InsCoverageId { get; set; }
-        public string PracticeProviderId { get; set; }
-        public string ServiceTypeId { get; set; }
+        public string ProviderId { get; set; }
+        public string TOSId { get; set; }
         public DateTime RequestDateOfService { get; set; }
         public bool CoverageActive { get; set; }
         public DateTime InquiryDateTime { get; set; }
@@ -20,8 +21,11 @@ namespace PM3.Model.Models
 
         // parents
         public virtual InsCoverage InsCoverage { get; set; }
-        public virtual Provider PracticeProvider { get; set; }
-        public virtual ServiceType ServiceType { get; set; }
+        public virtual Provider Provider { get; set; }
+        public virtual TOS TOS { get; set; }
         public virtual User User { get; set; }
+
+        // children
+        public virtual List<EDI270> EDI270s { get; set; }
     }
 }

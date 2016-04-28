@@ -11,7 +11,7 @@ namespace PM3.Data.Configuration
         {
             ToTable("AccidentCode");
             HasKey(p => p.AccidentCodeId);
-            Property(p => p.AccidentCodeId).IsRequired().HasMaxLength(10).HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute() {IsClustered=true})); 
+            Property(p => p.AccidentCodeId).IsRequired().HasMaxLength(10); //.HasColumnAnnotation("Index", new IndexAnnotation(new IndexAttribute() {IsClustered=true})); 
             Property(p => p.Description).IsRequired().HasMaxLength(100);
 
             // children

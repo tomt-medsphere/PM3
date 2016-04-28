@@ -75,7 +75,6 @@ namespace PM3.Data.Configuration
             HasRequired(p => p.User).WithMany(p => p.Charges).HasForeignKey(p => p.UserId).WillCascadeOnDelete(false);
             HasRequired(p => p.ChargeBatch).WithMany(p => p.Charges).HasForeignKey(p => p.ChargeBatchId).WillCascadeOnDelete(false);
             HasOptional(p => p.ExtFacility).WithMany(p => p.Charges).HasForeignKey(p => p.ExtFacilityId).WillCascadeOnDelete(false);
-            HasOptional(p => p.CurrentPayerCoverage).WithMany(p => p.Charges).HasForeignKey(p => p.CurrentPayerCoverageId).WillCascadeOnDelete(false);
             HasOptional(p => p.NatureOfCondition).WithMany(p => p.Charges).HasForeignKey(p => p.NatureOfConditionId).WillCascadeOnDelete(false);
             HasOptional(p => p.AccidentCode).WithMany(p => p.Charges).HasForeignKey(p => p.AccidentCodeId).WillCascadeOnDelete(false);
             HasOptional(p => p.PWKTransmissionCode).WithMany(p => p.Charges).HasForeignKey(p => p.PWKTransmissionCodeId).WillCascadeOnDelete(false);
@@ -83,7 +82,7 @@ namespace PM3.Data.Configuration
             HasRequired(p => p.User).WithMany(p => p.Charges).HasForeignKey(p => p.UserId).WillCascadeOnDelete(false);
 
             // children
-            HasMany(c => c.ChargeICD).WithRequired(c => c.Charge);
+            HasMany(c => c.ChargeICDs).WithRequired(c => c.Charge);
             HasMany(c => c.ChargeServices).WithRequired(c => c.Charge);
             HasMany(c => c.PatientNotes).WithOptional(c => c.Charge);
             HasMany(c => c.PrepErrors).WithRequired(c => c.Charge);
@@ -92,8 +91,10 @@ namespace PM3.Data.Configuration
             HasMany(c => c.PrepRunDetails).WithRequired(c => c.Charge);
             HasMany(c => c.PrepRunPrepErrors).WithRequired(c => c.Charge);
             HasMany(c => c.ChargeInsCoverages).WithRequired(c => c.Charge);
-            HasMany(c => c.EDI277STCs).WithRequired(c => c.Charge);
+            HasMany(c => c.EDI277STCs).WithOptional(c => c.Charge);
 
+            // special one to one/zero currentpayercoverage
+            HasOptional(p => p.CurrentPayerCoverage).WithOptionalPrincipal(p => p.CurrentPayerCoverage).WillCascadeOnDelete(false);
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace PM3.Model.Models
+﻿using System.Collections.Generic;
+
+namespace PM3.Model.Models
 {
     public class InsPlan
     {
@@ -41,5 +43,8 @@
         public virtual ClaimFilingIndicator ClaimFilingIndicator { get; set; }
         public virtual EDICOBLevel EDICOBLevel { get; set; }
         public virtual MSPType  MSPType { get; set; }
+
+        // children
+        public virtual List<Claim> Claims { get; set; }
     }
 }

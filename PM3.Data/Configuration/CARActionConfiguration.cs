@@ -1,4 +1,5 @@
-﻿using PM3.Model.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using PM3.Model.Models;
 using System.Data.Entity.ModelConfiguration;
 
 namespace PM3.Data.Configuration
@@ -8,7 +9,8 @@ namespace PM3.Data.Configuration
         public CARActionConfiguation()
         {
             ToTable("CARAction");
-            HasKey(p => p.CARCodeId);
+            HasKey(p => p.CARActionId);
+            Property(p => p.CARActionId).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(p => p.CARCodeId).IsRequired().HasMaxLength(2);
             Property(p => p.ShortDescription).IsRequired().HasMaxLength(30);
             Property(p => p.SetReview).IsRequired();

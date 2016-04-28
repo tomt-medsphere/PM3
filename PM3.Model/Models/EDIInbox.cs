@@ -19,5 +19,6 @@ namespace PM3.Model.Models
         // children
         public virtual List<EDIReport> EDIReports { get; set; }
         public virtual List<EDISessionStep> EDISessionSteps { get; set; }
+        public virtual List<EDI835> EDI835s { get; set; }
     }
 }

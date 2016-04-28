@@ -12,7 +12,7 @@ namespace PM3.Data.Configuration
             ToTable("BillingAccount");
             HasKey(p => p.BillingAccountId);
             Property(p => p.BillingAccountId).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            Property(p => p.GuarantorId).IsRequired().HasColumnAnnotation("Index", new IndexAttribute());
+            Property(p => p.GuarantorId).IsRequired(); //.HasColumnAnnotation("Index", new IndexAttribute());
             Property(p => p.BillingAccountTypeId).IsRequired().HasMaxLength(10);
             Property(p => p.BillingAccountTypeDate).IsRequired();
             Property(p => p.Description).HasMaxLength(100);

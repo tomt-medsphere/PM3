@@ -23,5 +23,10 @@ namespace PM3.Model.Models
         // children
         public virtual List<Charge> Charges { get; set; }
         public virtual List<ChargeBatch> ChargeBatches { get; set; }
+        public virtual List<ClaimRun> ClaimRuns { get; set; }
+        public virtual List<ClosingRun> ClosingRuns { get; set; }
+
+        public virtual List<EDI270> EDI270s { get; set; }
+        public List<EDI277STCAction> EDI277Actions { get; set; }
     }
 }

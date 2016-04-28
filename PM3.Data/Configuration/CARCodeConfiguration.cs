@@ -14,8 +14,8 @@ namespace PM3.Data.Configuration
             Property(p => p.StartDate).IsRequired();
 
             // children
-            HasMany(c => c.TX).WithOptional(c => c.CARCode);
-            HasMany(c => c.TXCAS).WithRequired(c => c.CARCode);
+            HasMany(c => c.TXs).WithOptional(c => c.CARCode);
+            HasMany(c => c.TXCASs).WithRequired(c => c.CARCode);
             HasMany(c => c.InsPlanCARActions).WithRequired(c => c.CARCode);
             HasMany(c => c.CARActions).WithRequired(c => c.CARCode);
         }

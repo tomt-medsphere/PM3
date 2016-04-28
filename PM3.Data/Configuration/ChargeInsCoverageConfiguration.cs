@@ -26,12 +26,14 @@ namespace PM3.Data.Configuration
             HasRequired(p => p.Charge).WithMany(p => p.ChargeInsCoverages).HasForeignKey(p => p.ChargeId).WillCascadeOnDelete(false);
 
             // children
-            HasMany(c => c.Charges).WithRequired(c => c.CurrentPayerCoverage);
             HasMany(c => c.PrepErrors).WithRequired(c => c.ChargeInsCoverage);
-            HasMany(c => c.Claims).WithRequired(c => c.ClaimInsCoverage);
+            HasMany(c => c.Claims).WithRequired(c => c.ChargeInsCoverage);
             HasMany(c => c.PrepRequests).WithRequired(c => c.ChargeInsCoverage);
             HasMany(c => c.PrepRunPrepErrors).WithRequired(c => c.ChargeInsCoverage);
-            HasMany(c => c.Tx).WithOptional(c => c.ChargeInsCoverage);
+            HasMany(c => c.TXs).WithOptional(c => c.ChargeInsCoverage);
+
+            // special one to one/zero currentpayercoverage
+            HasOptional(c => c.CurrentPayerCoverage).WithOptionalDependent(c => c.CurrentPayerCoverage);
         }
     }
 }

@@ -13,5 +13,6 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<ChargeICD> ChargeICDs { get; set; }
+        public virtual List<ChargeServiceICD> ChargeServiceICDs { get; set; }
     }
 }
