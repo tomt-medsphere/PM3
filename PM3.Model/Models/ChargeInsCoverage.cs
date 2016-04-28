@@ -6,7 +6,7 @@ namespace PM3.Model.Models
     {
         public int ChargeInsCoverageId { get; set; }
         public int ChargeId { get; set; }
-        public int InscoverageId { get; set; }
+        public int InsCoverageId { get; set; }
         public int Sequence { get; set; }
         public bool Inactive { get; set; }
 

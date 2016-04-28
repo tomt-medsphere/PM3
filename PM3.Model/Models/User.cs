@@ -22,5 +22,6 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<Charge> Charges { get; set; }
+        public virtual List<ChargeBatch> ChargeBatches { get; set; }
     }
 }

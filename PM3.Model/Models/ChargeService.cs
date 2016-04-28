@@ -29,17 +29,17 @@ namespace PM3.Model.Models
         public bool PayProvider { get; set; }
         public bool BillInsurance { get; set; }
         public bool Taxable { get; set; }
-        public string Ndc { get; set; }
+        public string NDC { get; set; }
         public string MEAReferenceId { get; set; }
         public string MEAQualifierId { get; set; }
         public string MeasurementUnitId { get; set; }
-        public string MeaValue { get; set; }
+        public string MEAValue { get; set; }
         public bool StatementClosed { get; set; }
         public decimal Balance { get; set; }
         public decimal? StatementBalance { get; set; }
         public bool ChargeClosed { get; set; }
         public string ChargeServiceStatusId { get; set; }
-        public DateTime ChargeServiceStatudDate { get; set; }
+        public DateTime ChargeServiceStatusDate { get; set; }
 
         // parents
         public virtual Charge Charge { get; set; }
@@ -63,7 +63,7 @@ namespace PM3.Model.Models
         public virtual List<ChargeServiceICD> ChargeServiceICD { get; set; }
         public virtual List<PrepError> PrepErrors { get; set; }
         public virtual List< PrepRunPrepError> PrepRunPrepErrors { get; set; }
-        public virtual List<TX> Tx { get; set; }
+        public virtual List<TX> TX { get; set; }
         public virtual List<EDI277STC> EDI277STC { get; set; }
     }
 }

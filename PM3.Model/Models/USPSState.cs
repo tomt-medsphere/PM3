@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.Design;
 
 namespace PM3.Model.Models
 {
@@ -9,5 +10,6 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<Charge> Charges { get; set; }
+        
     }
 }

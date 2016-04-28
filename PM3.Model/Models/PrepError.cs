@@ -20,5 +20,6 @@ namespace PM3.Model.Models
         public virtual ChargeInsCoverage ChargeInsCoverage { get; set; }
         public virtual User User { get; set; }
         public virtual PrepRule PrepRule { get; set; }
+
     }
 }

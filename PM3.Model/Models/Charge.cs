@@ -66,7 +66,7 @@ namespace PM3.Model.Models
         public virtual PracticeSite PracticeSite { get; set; }
         public virtual FacilityAdmission FacilityAddmission { get; set; }
         public virtual ExtFacility ExtFacility { get; set; }
-        public virtual PWKTransmissionCode PWKTransmissinoCode { get; set; }
+        public virtual PWKTransmissionCode PWKTransmissionCode { get; set; }
         public virtual PWKTypeCode PWKTypeCode { get; set; }
         public virtual ExtProvider RefProvider { get; set; } 
         public virtual ExtProvider PCP { get; set; }
@@ -79,7 +79,7 @@ namespace PM3.Model.Models
         public virtual ChargeInsCoverage CurrentPayerCoverage { get; set; }
 
         //children
-        public virtual List<ChargeICD> ChargeICD { get; set; }
+        public virtual List<ChargeICD> ChargeICDs { get; set; }
         public virtual List<ChargeService> ChargeServices { get; set; }
         public virtual List<ChargeInsCoverage> ChargeInsCoverages { get; set; }
         public virtual List<Claim> Claims { get; set; }
@@ -88,5 +88,6 @@ namespace PM3.Model.Models
         public virtual List<PrepRunDetail> PrepRunDetails { get; set; }
         public virtual List<PrepRunPrepError> PrepRunPrepErrors { get; set; }
         public virtual List<PatientNote> PatientNotes { get; set; }
+        public virtual List<EDI277STC> EDI277STCs { get; set; }
     }
 }

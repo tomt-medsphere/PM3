@@ -62,7 +62,11 @@
     <Compile Include="Configuration\CDCEthnicityConfiguration.cs" />
     <Compile Include="Configuration\CDCRaceConfiguration.cs" />
     <Compile Include="Configuration\CertificateTypeConfiguration.cs" />
+    <Compile Include="Configuration\ChargeBatchConfiguration.cs" />
     <Compile Include="Configuration\ChargeConfiguration.cs" />
+    <Compile Include="Configuration\ChargeICDConfiguration.cs" />
+    <Compile Include="Configuration\ChargeInsCoverageConfiguration.cs" />
+    <Compile Include="Configuration\ChargeServiceConfiguration.cs" />
     <Compile Include="Configuration\DocumentCategoryConfiguration.cs" />
     <Compile Include="Configuration\DocumentConfiguration.cs" />
     <Compile Include="Configuration\DocumentTypeConfiguration.cs" />

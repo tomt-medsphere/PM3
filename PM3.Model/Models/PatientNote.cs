@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
@@ -24,5 +25,8 @@ namespace PM3.Model.Models
         public virtual User CreatedBy { get; set; }
         public virtual User AssignedTo { get; set; }
         public virtual Charge Charge { get; set; }
+
+        // children
+        public virtual List<Charge> Charges { get; set; }
     }
 }

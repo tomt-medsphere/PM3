@@ -9,7 +9,7 @@ namespace PM3.Model.Models
         public int ClaimId { get; set; }
         public int ChargeId { get; set; }
         public int ChargeServiceId { get; set; }
-        public string StcSegment { get; set; }
+        public string STCSegment { get; set; }
         public string Ref1K { get; set; }
 
         // parent
@@ -20,5 +20,7 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<EDI277STCAction> EDI277STCActions { get; set; }
+        public virtual List<Charge> Charges { get; set; }
+
     }
 }
