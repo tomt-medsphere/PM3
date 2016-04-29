@@ -8,6 +8,6 @@ namespace PM3.Model.Models
         public string Description { get; set; }
 
         // children
-        public virtual List<EDISession> EDISession { get; set; }
+        public virtual List<EDISession> EDISessions { get; set; }
     }
 }

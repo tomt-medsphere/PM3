@@ -35,11 +35,11 @@ namespace PM3.Data.Configuration
             Property(p => p.ElementDelimiter).IsRequired().HasMaxLength(1);
             Property(p => p.SubElementDelimiter).IsRequired().HasMaxLength(1);
 
-            // parents
-            HasOptional(p => p.EDIInbox).WithMany(p => p.EDI835s).HasForeignKey(p => p.EDI835Id).WillCascadeOnDelete(false);
+            //// parents
+            HasOptional(p => p.EDIInbox).WithMany(p => p.EDI835s).HasForeignKey(p => p.EDIInboxId).WillCascadeOnDelete(false);
             HasOptional(p => p.TxBatch).WithMany(p => p.EDI835s).HasForeignKey(p => p.TXBatchId).WillCascadeOnDelete(false);
 
-            // children
+            //// children
             HasMany(c => c.EDI835Log).WithRequired(c => c.EDI835);
         }
     }

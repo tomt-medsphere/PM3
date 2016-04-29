@@ -27,6 +27,7 @@ namespace PM3.Model.Models
         public virtual List<ClosingRun> ClosingRuns { get; set; }
 
         public virtual List<EDI270> EDI270s { get; set; }
-        public List<EDI277STCAction> EDI277Actions { get; set; }
+        public virtual List<EDI277STCAction> EDI277Actions { get; set; }
+        public virtual List<EDIInbox> EDIInboxes { get; set; }
     }
 }

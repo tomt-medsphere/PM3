@@ -10,11 +10,11 @@ namespace PM3.Model.Models
         public string MiddleName { get; set; }
         public string SuffixId { get; set; }
         public string Credentials { get; set; }
-        public string Npi { get; set; }
+        public string NPI { get; set; }
         public string TaxonomyCodeId { get; set; }
-        public string CmsSpecialityId { get; set; }
-        public int ExternalPracticeId { get; set; }
-        public int ExternalPracticeSiteId { get; set; }
+        public string CMSSpecialityId { get; set; }
+        public int ExtPracticeId { get; set; }
+        public int? ExtPracticeSiteId { get; set; }
         public bool Inactive { get; set; }
 
         // parents

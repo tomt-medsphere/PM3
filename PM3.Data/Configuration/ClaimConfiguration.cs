@@ -36,7 +36,7 @@ namespace PM3.Data.Configuration
             HasRequired(p => p.PrepRun).WithMany(p => p.Claims).HasForeignKey(p => p.PrepRunId).WillCascadeOnDelete(false);
             HasRequired(p => p.Charge).WithMany(p => p.Claims).HasForeignKey(p => p.ChargeId).WillCascadeOnDelete(false);
             HasRequired(p => p.ChargeInsCoverage).WithMany(p => p.Claims).HasForeignKey(p => p.ChargeInsCoverageId).WillCascadeOnDelete(false);
-            HasRequired(p => p.EDIPartner).WithMany(p => p.Claims).HasForeignKey(p => p.EDIPartnerId).WillCascadeOnDelete(false);
+            HasOptional(p => p.EDIPartner).WithMany(p => p.Claims).HasForeignKey(p => p.EDIPartnerId).WillCascadeOnDelete(false);
             HasRequired(p => p.InsFormType).WithMany(p => p.Claims).HasForeignKey(p => p.InsFormTypeId).WillCascadeOnDelete(false);
             HasRequired(p => p.InsPlan).WithMany(p => p.Claims).HasForeignKey(p => p.InsPlanId).WillCascadeOnDelete(false);
             HasOptional(p => p.ClaimRun).WithMany(p => p.Claims).HasForeignKey(p => p.ClaimRunId).WillCascadeOnDelete(false);

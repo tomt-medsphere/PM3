@@ -13,7 +13,7 @@ namespace PM3.Model.Models
         public string USPSStateId { get; set; }
         public string PostalCode { get; set; }
         public string USPSCountryId { get; set; }
-        public string Npi { get; set; }
+        public string NPI { get; set; }
         public bool Inactive { get; set; }
 
         // parents
@@ -22,7 +22,8 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<Charge> Charges { get; set; }
-        public virtual List<FacilityAdmission> FacilityAddmissions { get; set; }
         public virtual List<ExtFacility> ExtFacilities { get; set; }
+        public virtual List<ExtFacilityPhone> ExtFacilityPhones { get; set; }
+        public virtual List<FacilityAdmission> FacilityAdmissions { get; set; }
     }
 }

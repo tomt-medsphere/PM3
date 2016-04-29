@@ -7,7 +7,7 @@ namespace PM3.Model.Models
     {
         public int FacilityAdmissionId { get; set; }
         public int PatientId { get; set; }
-        public string ExternalFacilityId { get; set; }
+        public string ExtFacilityId { get; set; }
         public DateTime Admitted { get; set; }
         public DateTime Discharged { get; set; }
         public string Note { get; set; }

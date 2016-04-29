@@ -8,7 +8,7 @@
         public int Sequence { get; set; }
 
         // parents
-        public virtual ExtPractice ExtPractice { get; set; }
+        public virtual  ExtPracticeSite ExtPracticeSite { get; set; }
         public virtual Phone Phone { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace PM3.Model.Models
         public string Name { get; set; }
         public string AddressStreet { get; set; }
         public string AddressOther { get; set; }
-        public string AddressCity { get; set; }
+        public string City { get; set; }
         public string USPSStateId { get; set; }
         public string PostalCode { get; set; }
         public string USPSCountryId { get; set; }

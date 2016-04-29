@@ -17,7 +17,7 @@ namespace PM3.Model.Models
         public virtual EDISessionStatus EDISessionStatus { get; set; }
 
         // children
-        public virtual List<EDIInbox> EDIInbox { get; set; }
+        public virtual List<EDIInbox> EDIInboxes { get; set; }
         public virtual List<EDISessionStep> EDISessionSteps { get; set; }
     }
 }

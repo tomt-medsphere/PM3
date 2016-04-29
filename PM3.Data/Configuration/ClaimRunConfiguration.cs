@@ -36,7 +36,7 @@ namespace PM3.Data.Configuration
             
             // children
             HasMany(c => c.EDI277s).WithOptional(c => c.ClaimRun);
-            HasMany(c => c.EDISessionSteps).WithRequired(c => c.ClaimRun);
+            HasMany(c => c.EDISessionSteps).WithOptional(c => c.ClaimRun);
             HasMany(c => c.Claims).WithOptional(c => c.ClaimRun);
         }
     }

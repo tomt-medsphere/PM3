@@ -4,7 +4,7 @@ namespace PM3.Model.Models
 {
     public class ExtPractice
     {
-        public string ExtPracticeId { get; set; }
+        public int ExtPracticeId { get; set; }
         public string Name { get; set; }
         public bool Inactive { get; set; }
 

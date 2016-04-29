@@ -10,6 +10,9 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<Charge> Charges { get; set; }
-        
+        public virtual List<Employer> Employers { get; set; }
+        public virtual List<ExtFacility> ExtFacilities { get; set; }
+        public virtual List<ExtPracticeSite> ExtPracticeSites { get; set; }
+        public virtual List<FipsCounty> FIPSCounties { get; set; }
     }
 }

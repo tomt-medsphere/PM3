@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
@@ -13,5 +14,6 @@ namespace PM3.Model.Models
         // parents
         public virtual StatementRunStatus StatementRunStatus { get; set; }
         public virtual User User { get; set; }
+        public List<EDISessionStep> EDISessionSteps { get; set; }
     }
 }

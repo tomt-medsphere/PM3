@@ -5,7 +5,7 @@ namespace PM3.Model.Models
     public class EDIReport
     {
         public int EDIReportId { get; set; }
-        public int EDIInboxId { get; set; }
+        public int? EDIInboxId { get; set; }
         public string SenderId { get; set; }
         public string ReceiverId { get; set; }
         public DateTime ReceivedDateTime { get; set; }

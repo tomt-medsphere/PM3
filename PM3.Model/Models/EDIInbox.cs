@@ -10,7 +10,7 @@ namespace PM3.Model.Models
         public string UserId { get; set; }
         public string FileText { get; set; }
         public string OriginalFileName { get; set; }
-        public int EDISessionId { get; set; }
+        public int? EDISessionId { get; set; }
 
         // parents
         public virtual User User { get; set; }

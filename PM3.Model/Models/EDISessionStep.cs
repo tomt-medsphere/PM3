@@ -6,9 +6,9 @@
         public int EDISessionId { get; set; }
         public string EDISessionStageId { get; set; }
         public bool Error { get; set; }
-        public int ClaimRunId { get; set; }
-        public int StatementRunId { get; set; }
-        public int EDIInboxId { get; set; }
+        public int? ClaimRunId { get; set; }
+        public int? StatementRunId { get; set; }
+        public int? EDIInboxId { get; set; }
         public string Message { get; set; }
         public string Filename { get; set; }
 
