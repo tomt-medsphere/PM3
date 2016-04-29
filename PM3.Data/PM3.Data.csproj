@@ -106,6 +106,8 @@
     <Compile Include="Configuration\ExtProviderPhoneConfiguration.cs" />
     <Compile Include="Configuration\FacilityAdmissionConfiguration.cs" />
     <Compile Include="Configuration\FIPSCountyConfiguration.cs" />
+    <Compile Include="Configuration\HCPCSConfiguration.cs" />
+    <Compile Include="Configuration\HCPCSModifierConfiguration.cs" />
     <Compile Include="Configuration\PersonConfiguration.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />

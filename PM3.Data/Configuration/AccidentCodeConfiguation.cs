@@ -15,7 +15,7 @@ namespace PM3.Data.Configuration
             Property(p => p.Description).IsRequired().HasMaxLength(100);
 
             // children
-            HasMany(c => c.Charges).WithOptional(p => p.AccidentCode);
+            HasMany(c => c.Charges).WithOptional(c => c.AccidentCode);
         }
     }
 }
