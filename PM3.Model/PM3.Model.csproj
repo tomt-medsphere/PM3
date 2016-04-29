@@ -105,6 +105,8 @@
     <Compile Include="Models\HCPCS.cs" />
     <Compile Include="Models\HCPCSModifier.cs" />
     <Compile Include="Models\HCPCSRVU.cs" />
+    <Compile Include="Models\HL7Inbox.cs" />
+    <Compile Include="Models\HL7Outbox.cs" />
     <Compile Include="Models\ICD.cs" />
     <Compile Include="Models\IdQualifier.cs" />
     <Compile Include="Models\InfoReleaseType.cs" />

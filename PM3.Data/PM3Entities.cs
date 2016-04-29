@@ -3,6 +3,7 @@ using MySql.Data.Entity;
 using PM3.Data.Configuration;
 using PM3.Model.Models;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
@@ -35,6 +36,9 @@ namespace PM3.Data
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            // tweak the Entity Framework conventions
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Properties<string>().Configure(p => p.HasColumnType("varchar"));
 
             // load the configuation classes
             modelBuilder.Configurations.AddFromAssembly(Assembly.Load("PM3.Data"));

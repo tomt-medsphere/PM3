@@ -108,6 +108,9 @@
     <Compile Include="Configuration\FIPSCountyConfiguration.cs" />
     <Compile Include="Configuration\HCPCSConfiguration.cs" />
     <Compile Include="Configuration\HCPCSModifierConfiguration.cs" />
+    <Compile Include="Configuration\HCPCSRVUConfiguration.cs" />
+    <Compile Include="Configuration\HL7InboxConfiguration.cs" />
+    <Compile Include="Configuration\HL7OutboxConfiguration.cs" />
     <Compile Include="Configuration\PersonConfiguration.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
