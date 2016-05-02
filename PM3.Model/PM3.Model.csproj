@@ -115,7 +115,9 @@
     <Compile Include="Models\InsPlan.cs" />
     <Compile Include="Models\InsPlanCARAction.cs" />
     <Compile Include="Models\InsPlanGroup.cs" />
+    <Compile Include="Models\InsPlanPhone.cs" />
     <Compile Include="Models\InsPolicy.cs" />
+    <Compile Include="Models\InsPolicyAllowedDX.cs" />
     <Compile Include="Models\Interface.cs" />
     <Compile Include="Models\ITUCountry.cs" />
     <Compile Include="Models\Language.cs" />
@@ -126,12 +128,14 @@
     <Compile Include="Models\MSPType.cs" />
     <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\PatientBillingAccount.cs" />
+    <Compile Include="Models\PatientEHR.cs" />
     <Compile Include="Models\PatientNote.cs" />
     <Compile Include="Models\PayProviderType.cs" />
     <Compile Include="Models\PersonEthnicity.cs" />
     <Compile Include="Models\PersonPhone.cs" />
     <Compile Include="Models\PersonRace.cs" />
     <Compile Include="Models\Phone.cs" />
+    <Compile Include="Models\PlanProfile.cs" />
     <Compile Include="Models\POS.cs" />
     <Compile Include="Models\PostingPeriod.cs" />
     <Compile Include="Models\PrepError.cs" />

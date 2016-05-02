@@ -10,8 +10,8 @@ namespace PM3.Model.Models
         public int InsPolicyId { get; set; }
         public string RelationshipCodeId { get; set; }
         public string MemberId { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
         public string Note { get; set; }
         public int Sequence { get; set; }
         public bool Inactive { get; set; }

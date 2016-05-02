@@ -15,9 +15,10 @@ namespace PM3.Model.Models
         // parents
         public virtual PhoneType PhoneType { get; set; }
         public virtual ITUCountry ITUCountry { get; set; }
-        public List<EmployerPhone> EmployerPhones { get; set; }
-        public List<ExtFacilityPhone> ExtFacilityPhones { get; set; }
-        public List<ExtPracticeSitePhone> ExtPracticeSitePhones { get; set; }
-        public List<ExtProviderPhone> ExtProviderPhones { get; set; }
+        public virtual List<EmployerPhone> EmployerPhones { get; set; }
+        public virtual List<ExtFacilityPhone> ExtFacilityPhones { get; set; }
+        public virtual List<ExtPracticeSitePhone> ExtPracticeSitePhones { get; set; }
+        public virtual List<ExtProviderPhone> ExtProviderPhones { get; set; }
+        public virtual List<InsPlanPhone> InsPlanPhones { get; set; }
     }
 }

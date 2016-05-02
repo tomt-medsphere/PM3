@@ -13,16 +13,17 @@ namespace PM3.Model.Models
         public string PracticeProviderId { get; set; }
         public bool InfoRelease { get; set; }
         public string InfoReleaseTypeId { get; set; }
-        public DateTime InfoReleaseDate { get; set; }
+        public DateTime? InfoReleaseDate { get; set; }
         public bool PayProvider { get; set; }
         public string PayProviderTypeId { get; set; }
-        public DateTime PayProviderDate { get; set; }
+        public DateTime? PayProviderDate { get; set; }
         public bool HIPAARelease { get; set; }
-        public DateTime HIPAAReleaseDate { get; set; }
+        public DateTime? HIPAAReleaseDate { get; set; }
         public string PCPId { get; set; }
-        public DateTime PCPLastSeen { get; set; }
-        public DateTime LMP { get; set; }
-        public DateTime EDC { get; set; }
+        public DateTime? PCPLastSeen { get; set; }
+        public string RefProviderId { get; set; }
+        public DateTime? LMP { get; set; }
+        public DateTime? EDC { get; set; }
         public bool Inactive { get; set; }
 
         // parents
@@ -31,10 +32,15 @@ namespace PM3.Model.Models
         public virtual InfoReleaseType InfoReleaseType { get; set; }
         public virtual PayProviderType PayProviderType { get; set; }
         public virtual ExtProvider PCP { get; set; }
+        public virtual ExtProvider RefProvider { get; set; }
 
         // children
         public virtual List<Charge> Charges { get; set; }
         public virtual List<ChargeService> ChargeServices { get; set; }
         public virtual  List<FacilityAdmission> FacilityAdmissions { get; set; }
+        public virtual List<InsCoverage> InsCoverages { get; set; }
+        public virtual List<PatientBillingAccount> PatientBillingAccounts { get; set; }
+        public virtual List<PatientNote> PatientNotes { get; set; }
+        public virtual PatientEHR PatientEHR { get; set; }
     }
 }

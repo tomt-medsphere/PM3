@@ -19,7 +19,7 @@ namespace PM3.Data.Configuration
             Property(p => p.CreatedDateTime).IsRequired();
             Property(p => p.UserId).IsRequired().HasMaxLength(255);
             Property(p => p.EDIPartnerId).IsOptional().HasMaxLength(10);
-            Property(p => p.InsFormTypeId).IsOptional().HasMaxLength(10);
+            Property(p => p.InsFormTypeId).IsRequired().HasMaxLength(10);
             Property(p => p.ClaimRunStatusId).IsRequired().HasMaxLength(10);
             Property(p => p.SubmittedDateTime).IsOptional();
             Property(p => p.AcknowledgedDateTime).IsOptional();
@@ -32,7 +32,7 @@ namespace PM3.Data.Configuration
             HasRequired(p => p.User).WithMany(p => p.ClaimRuns);
             HasRequired(p => p.ClaimRunStatus).WithMany(p => p.ClaimRuns);
             HasOptional(p => p.EDIPartner).WithMany(p => p.ClaimRuns);
-            HasOptional(p => p.InsFormType).WithMany(p => p.ClaimRuns);
+            HasRequired(p => p.InsFormType).WithMany(p => p.ClaimRuns);
             
             // children
             HasMany(c => c.EDI277s).WithOptional(c => c.ClaimRun);

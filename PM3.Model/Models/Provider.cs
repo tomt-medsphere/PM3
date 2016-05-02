@@ -22,6 +22,6 @@ namespace PM3.Model.Models
         public virtual List<ChargeService> RenderingChargeServices { get; set; }
         public virtual List<ChargeService> SupervisingChargeServices { get; set; }
         public virtual List<EDI270> EDI270s { get; set; }
-
+        public List<Patient> Patients { get; set; }
     }
 }

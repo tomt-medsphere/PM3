@@ -9,5 +9,6 @@ namespace PM3.Model.Models
         public List<Employer> Employers { get; set; }
         public List<ExtFacility> ExtFacilities { get; set; }
         public List<ExtPracticeSite> ExtPracticeSites { get; set; }
+        public List<InsPlan> InsPlans { get; set; }
     }
 }
