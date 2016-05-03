@@ -14,6 +14,7 @@ namespace PM3.Model.Models
         public virtual List<ExtFacility> ExtFacilities { get; set; }
         public virtual List<ExtPracticeSite> ExtPracticeSites { get; set; }
         public virtual List<FipsCounty> FIPSCounties { get; set; }
-        public List<InsPlan> InsPlans { get; set; }
+        public virtual List<InsPlan> InsPlans { get; set; }
+        public virtual List<Person> Persons { get; set; }
     }
 }

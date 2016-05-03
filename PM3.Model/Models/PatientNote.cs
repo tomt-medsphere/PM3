@@ -22,11 +22,8 @@ namespace PM3.Model.Models
         // parents
         public virtual Patient Patient { get; set; }
         public virtual PatientNoteType PatientNoteType { get; set; }
-        public virtual User CreatedBy { get; set; }
-        public virtual User AssignedTo { get; set; }
+        public virtual User CreatedUser { get; set; }
+        public virtual User AssignedUser { get; set; }
         public virtual Charge Charge { get; set; }
-
-        // children
-        public virtual List<Charge> Charges { get; set; }
     }
 }

@@ -11,9 +11,9 @@ namespace PM3.Model.Models
         public string MiddleName { get; set; }
         public string SuffixId { get; set; }
         public string SalutationId { get; set; }
-        public string Ssn { get; set; }
-        public DateTime? Dob { get; set; }
-        public DateTime? Dod { get; set; }
+        public string SSN { get; set; }
+        public DateTime? DOB { get; set; }
+        public DateTime? DOD { get; set; }
         public bool Deceased { get; set; }
         public string SexId { get; set; }
         public string MaritalStatusId { get; set; }
@@ -29,7 +29,7 @@ namespace PM3.Model.Models
         public string GuardianNote { get; set; }
         public string ResidentialFacilityId { get; set; }
         public int? EmployerId { get; set; }
-        public string Aka { get; set; }
+        public string AKA { get; set; }
         public string PreferredContactMethod { get; set; }
         public string MailingAddressStreet { get; set; }
         public string MailingAddressOther { get; set; }
@@ -47,11 +47,12 @@ namespace PM3.Model.Models
         public virtual MaritalStatus MaritalStatus { get; set; }
         public virtual Language Language { get; set; }
         public virtual CDCRace CDCRace { get; set; }
-        public virtual  CDCEthnicity CDCEthnicity { get; set; }
+        public virtual CDCEthnicity CDCEthnicity { get; set; }
         public virtual USPSState USPSState { get; set; }
         public virtual USPSCountry USPSCountry { get; set; }
         public virtual Salutation Salutation { get; set; }
         public virtual Suffix Suffix { get; set; }
+        public virtual Sex Sex { get; set; }
 
         // children
         public virtual List<BillingAccount> BillingAccounts { get; set; }

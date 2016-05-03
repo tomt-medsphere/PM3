@@ -60,7 +60,7 @@ namespace PM3.Data.Configuration
             HasMany(c => c.InsPolicies).WithRequired(c => c.InsPlan);
             HasMany(c => c.InsPlanCARActions).WithRequired(c => c.InsPlan);
             HasMany(c => c.InsPlanPhones).WithRequired(c => c.InsPlan);
-            HasMany(c => c.PlanProfiles).WithRequired(c => c.InsPlan);
+            HasMany(c => c.PlanProfiles).WithOptional(c => c.InsPlan);
             HasMany(c => c.Claims).WithRequired(c => c.InsPlan);
             HasMany(c => c.PrepRunDetails).WithOptional(c => c.InsPlan);
             HasMany(c => c.TXBatches).WithOptional(c => c.InsPlan);

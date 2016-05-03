@@ -1,7 +1,6 @@
-﻿using PM3.Model.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace PM3.Model
+namespace PM3.Model.Models
 {
     public class PaymentCategory
     {

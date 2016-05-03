@@ -41,10 +41,10 @@ namespace PM3.Data.Configuration
             HasMany(c => c.InsCoverages).WithRequired(c => c.Patient);
             HasMany(c => c.PatientBillingAccounts).WithRequired(c => c.Patient);
             HasMany(c => c.PatientNotes).WithRequired(c => c.Patient);
-            //HasMany(c => c.PatientEHR).WithRequired(c => c.Patient);
             HasMany(c => c.Charges).WithRequired(c => c.Patient);
             HasMany(c => c.FacilityAdmissions).WithRequired(c => c.Patient);
             HasMany(c => c.ChargeServices).WithRequired(c => c.Patient);
+            HasOptional(c => c.PatientEHR).WithRequired(p => p.Patient);
 
 
         }

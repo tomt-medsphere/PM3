@@ -25,6 +25,7 @@ namespace PM3.Model.Models
         public virtual InsPlanGroup InsPlanGroup { get; set; }
 
         // children
-        //public virtual List<PlanProfileDetail> PlanProfileDetails { get; set; }
+        public virtual List<PlanProfileDetail> PlanProfileDetails { get; set; }
+        public virtual List<PlanProfileEvent> PlanProfileEvents { get; set; }
     }
 }

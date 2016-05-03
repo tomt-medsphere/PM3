@@ -136,8 +136,12 @@
     <Compile Include="Models\PersonRace.cs" />
     <Compile Include="Models\Phone.cs" />
     <Compile Include="Models\PlanProfile.cs" />
+    <Compile Include="Models\PlanProfileDetail.cs" />
+    <Compile Include="Models\PlanProfileEvent.cs" />
     <Compile Include="Models\POS.cs" />
     <Compile Include="Models\PostingPeriod.cs" />
+    <Compile Include="Models\Practice.cs" />
+    <Compile Include="Models\PracticePhone.cs" />
     <Compile Include="Models\PrepError.cs" />
     <Compile Include="Models\PrepRequest.cs" />
     <Compile Include="Models\PrepRunDetail.cs" />
