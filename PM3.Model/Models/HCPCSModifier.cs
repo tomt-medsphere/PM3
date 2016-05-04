@@ -14,5 +14,6 @@ namespace PM3.Model.Models
         public virtual List<TXHCPCSModifier> TXHCPCSModifiers { get; set; }
         public virtual List<ServiceHCPCSModifier> ServiceHCPCSModifiers { get; set; }
         public virtual List<ChargeServiceMod> ChargeServiceMods { get; set; }
+        public virtual List<PlanProfileEvent> PlanProfileEvents { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<ChargeService> ChargeServices { get; set; }
+        public virtual List<Service> Services { get; set; }
 
     }
 }

@@ -167,7 +167,7 @@
     <Compile Include="Models\PaymentForm.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\PhoneType.cs" />
-    <Compile Include="Models\PMConfig.cs" />
+    <Compile Include="Models\PMSetting.cs" />
     <Compile Include="Models\PrepRule.cs" />
     <Compile Include="Models\RARC.cs" />
     <Compile Include="Models\RelationshipCode.cs" />

@@ -16,8 +16,8 @@ namespace PM3.Model.Models
         public bool Taxable { get; set; }
         public decimal Units { get; set; }
         public string MeasurementUnitId { get; set; }
-        public string POSCodeId { get; set; }
-        public string TOSCodeId { get; set; }
+        public string POSId { get; set; }
+        public string TOSId { get; set; }
         public string PracticeNote { get; set; }
         public string BillingNote { get; set; }
         public string NOCNote { get; set; }
@@ -32,12 +32,12 @@ namespace PM3.Model.Models
         public virtual HCPCS HCPCS { get; set; }
         public virtual HCPCS HCPCSL2 { get; set; }
         public virtual RevenueCode RevenueCode { get; set; }
-        public virtual POS POSCode { get; set; }
         public virtual CertificateType CertificateType { get; set; }
+        public virtual POS POS { get; set; }
+        public virtual TOS TOS { get; set; }
 
         // children
         public virtual List<ServiceHCPCSModifier> ServiceHCPCSModifiers { get; set; }
         public virtual List<ChargeService> ChargeServices { get; set; }
-
     }
 }

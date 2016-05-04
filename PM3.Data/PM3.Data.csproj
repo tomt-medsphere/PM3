@@ -144,6 +144,10 @@
     <Compile Include="Configuration\PhoneConfiguration.cs" />
     <Compile Include="Configuration\PhoneTypeConfiguration.cs" />
     <Compile Include="Configuration\PlanProfileConfiguration.cs" />
+    <Compile Include="Configuration\PlanProfileDetailConfiguration.cs" />
+    <Compile Include="Configuration\PlanProfileEventConfiguration.cs" />
+    <Compile Include="Configuration\PMSettingConfiguration.cs" />
+    <Compile Include="Configuration\POSConfiguration.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
     <Compile Include="Infrastructure\IDbFactory.cs" />

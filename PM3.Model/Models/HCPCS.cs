@@ -13,6 +13,6 @@ namespace PM3.Model.Models
         public virtual List<TX> TXs { get; set; }
         public virtual List<ChargeService> HCPCSChargeServices { get; set; }
         public virtual List<ChargeService> HCPCSL2ChargeServices { get; set; }
-
+        public virtual List<PlanProfileEvent> PlanProfileEvents { get; set; }
     }
 }
