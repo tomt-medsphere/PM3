@@ -46,5 +46,6 @@ namespace PM3.Model.Models
         // children
         public virtual List<PracticePhone> PracticePhones { get; set; }
         public virtual List<PracticeSite> PracticeSites { get; set; }
+        public virtual PracticeEHR PracticeEHR { get; set; }
     }
 }

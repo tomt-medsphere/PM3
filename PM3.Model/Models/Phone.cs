@@ -24,5 +24,6 @@ namespace PM3.Model.Models
         public virtual List<InsPlanPhone> InsPlanPhones { get; set; }
         public virtual List<PersonPhone> PersonPhones { get; set; }
         public virtual List<PracticePhone> PracticePhones { get; set; }
+        public virtual List<PracticeSitePhone> PracticeSitePhones { get; set; }
     }
 }

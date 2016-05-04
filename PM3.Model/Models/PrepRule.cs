@@ -1,4 +1,6 @@
-﻿namespace PM3.Model.Models
+﻿using System.Collections.Generic;
+
+namespace PM3.Model.Models
 {
     public class PrepRule
     {
@@ -15,5 +17,9 @@
         public string RuleMessage { get; set; }
         public bool Warning { get; set; }
         public bool HardCoded { get; set; }
+
+        // children
+        public virtual List<PrepError> PrepErrors { get; set; }
+        public virtual List<PrepRunPrepError> PrepRunPrepErrors { get; set; }
     }
 }

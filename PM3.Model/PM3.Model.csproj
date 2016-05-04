@@ -141,7 +141,10 @@
     <Compile Include="Models\POS.cs" />
     <Compile Include="Models\PostingPeriod.cs" />
     <Compile Include="Models\Practice.cs" />
+    <Compile Include="Models\PracticeEHR.cs" />
     <Compile Include="Models\PracticePhone.cs" />
+    <Compile Include="Models\PracticeSiteEHR.cs" />
+    <Compile Include="Models\PracticeSitePhone.cs" />
     <Compile Include="Models\PrepError.cs" />
     <Compile Include="Models\PrepRequest.cs" />
     <Compile Include="Models\PrepRunDetail.cs" />

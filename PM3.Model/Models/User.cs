@@ -31,5 +31,10 @@ namespace PM3.Model.Models
         public virtual List<EDIInbox> EDIInboxes { get; set; }
         public virtual List<PatientNote> CreatedPatientNotes { get; set; }
         public virtual List<PatientNote> AssignedPatientNotes { get; set; }
+        public virtual List<PostingPeriod> CreatedPostingPeriods { get; set; }
+        public virtual List<PostingPeriod> ClosedPostingPeriods { get; set; }
+        public virtual List<PrepError> PrepErrors { get; set; }
+        public virtual List<PrepRequest> PrepRequests { get; set; }
+        public virtual List<PrepRun> PrepRuns { get; set; }
     }
 }

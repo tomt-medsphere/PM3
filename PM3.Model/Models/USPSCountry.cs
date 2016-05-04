@@ -13,5 +13,8 @@ namespace PM3.Model.Models
         public virtual List<ExtPracticeSite> ExtPracticeSites { get; set; }
         public virtual List<InsPlan> InsPlans { get; set; }
         public virtual List<Person> Persons { get; set; }
+        public virtual List<Practice> Practices { get; set; }
+        public virtual List<Practice> RemitPractices { get; set; }
+        public virtual List<PracticeSite> PracticeSites { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<Claim> Claims { get; set; }
-
+        public virtual List<PrepRunDetail> PrepRunDetails { get; set; }
+        public virtual List<PrepRunPrepError> PrepRunPrepErrors { get; set; }
     }
 }
