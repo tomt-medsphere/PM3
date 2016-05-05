@@ -23,7 +23,7 @@ namespace PM3.Data.Configuration
             Property(p => p.AutoUpdate).IsRequired().HasMaxLength(10);
             Property(p => p.EventAction).IsRequired().HasMaxLength(10);
             Property(p => p.OverrideFees).IsRequired();
-            Property(p => p.Description).IsOptional().HasColumnType("longtext");
+            Property(p => p.Description).IsOptional().HasColumnType("text");
             Property(p => p.NPITracking).IsRequired();
             Property(p => p.Inactive).IsRequired();
 

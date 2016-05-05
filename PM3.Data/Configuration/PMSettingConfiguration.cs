@@ -25,7 +25,7 @@ namespace PM3.Data.Configuration
             Property(p => p.Value7).IsOptional().HasMaxLength(255);
             Property(p => p.Value8).IsOptional().HasMaxLength(255);
             Property(p => p.Value9).IsOptional().HasMaxLength(255);
-            Property(p => p.Value10).IsOptional().HasColumnType("longtext");
+            Property(p => p.Value10).IsOptional().HasColumnType("text");
         }
     }
 }

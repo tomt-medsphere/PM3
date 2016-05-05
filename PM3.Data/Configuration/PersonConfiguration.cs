@@ -28,10 +28,10 @@ namespace PM3.Data.Configuration
             Property(p => p.EmailAddress).IsOptional().HasMaxLength(255);
             Property(p => p.EmergencyContactId).IsOptional();
             Property(p => p.EmergencyContactRelationshipCodeId).IsOptional().HasMaxLength(2);
-            Property(p => p.EmergencyContactNote).IsOptional().HasColumnType("longtext");
+            Property(p => p.EmergencyContactNote).IsOptional().HasColumnType("text");
             Property(p => p.GuardianId).IsOptional();
             Property(p => p.GuardianRelationshipCodeId).IsOptional().HasMaxLength(2);
-            Property(p => p.GuardianNote).IsOptional().HasColumnType("longtext");
+            Property(p => p.GuardianNote).IsOptional().HasColumnType("text");
             Property(p => p.ResidentialFacilityId).IsOptional().HasMaxLength(10);
             Property(p => p.EmployerId).IsOptional();
             Property(p => p.AKA).IsRequired().HasMaxLength(255);

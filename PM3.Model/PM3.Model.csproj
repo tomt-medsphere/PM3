@@ -159,6 +159,8 @@
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\ServiceCategory.cs" />
     <Compile Include="Models\ServiceHCPCSModifier.cs" />
+    <Compile Include="Models\ServiceMacro.cs" />
+    <Compile Include="Models\ServiceMacroDetail.cs" />
     <Compile Include="Models\TOS.cs" />
     <Compile Include="Models\Sex.cs" />
     <Compile Include="Models\StatementRun.cs" />

@@ -20,7 +20,7 @@ namespace PM3.Data.Configuration
 
             // children
             HasMany(c => c.TXCodes).WithRequired(c => c.PaymentForm);
-            HasMany(c => c.TXBatches).WithRequired(c => c.PaymentForm);
+            HasMany(c => c.TXBatches).WithOptional(c => c.PaymentForm);
             HasMany(c => c.TXs).WithRequired(c => c.PaymentForm);
         }
     }

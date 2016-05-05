@@ -19,7 +19,7 @@ namespace PM3.Data.Configuration
             Property(p => p.Name).IsRequired().HasMaxLength(60);
             Property(p => p.EntityTypeId).IsRequired().HasMaxLength(3);
             Property(p => p.EIN).IsRequired().HasMaxLength(9);
-            Property(p => p.Note).IsOptional().HasColumnType("longtext");
+            Property(p => p.Note).IsOptional().HasColumnType("text");
             Property(p => p.LastName).IsOptional().HasMaxLength(60);
             Property(p => p.FirstName).IsOptional().HasMaxLength(35);
             Property(p => p.MiddleName).IsOptional().HasMaxLength(25);
@@ -49,6 +49,7 @@ namespace PM3.Data.Configuration
             HasRequired(p => p.USPSCountry).WithMany(p => p.Practices).HasForeignKey(p => p.USPSCountryId).WillCascadeOnDelete(false);
             HasRequired(p => p.RemitUSPSState).WithMany(p => p.RemitPractices).HasForeignKey(p => p.RemitUSPSStateId).WillCascadeOnDelete(false);
             HasRequired(p => p.RemitUSPSCountry).WithMany(p => p.RemitPractices).HasForeignKey(p => p.RemitUSPSCountryId).WillCascadeOnDelete(false);
+            HasRequired(p => p.TaxonomyCode).WithMany(p => p.Practices).HasForeignKey(p => p.TaxonomyCodeId).WillCascadeOnDelete(false);
 
             // children
             HasOptional(c => c.PracticeEHR).WithRequired(c => c.Practice);

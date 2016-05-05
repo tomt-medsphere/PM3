@@ -24,8 +24,8 @@ namespace PM3.Data.Configuration
             HasRequired(p => p.User).WithMany(p => p.ClosingRuns);
 
             // children
-            HasMany(c => c.TXBatches).WithRequired(c => c.ClosingRun);
-            HasMany(c => c.ChargeBatches).WithRequired(c => c.ClosingRun);
+            HasMany(c => c.TXBatches).WithOptional(c => c.ClosingRun);
+            HasMany(c => c.ChargeBatches).WithOptional(c => c.ClosingRun);
         }
     }
 }

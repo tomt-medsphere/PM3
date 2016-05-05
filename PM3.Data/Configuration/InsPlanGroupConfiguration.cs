@@ -16,7 +16,7 @@ namespace PM3.Data.Configuration
             HasKey(p => p.InsPlanGroupId);
             Property(p => p.InsPlanGroupId).IsRequired().HasMaxLength(10);
             Property(p => p.Description).IsRequired().HasMaxLength(60);
-            Property(p => p.Note).IsOptional().HasColumnType("longtext");
+            Property(p => p.Note).IsOptional().HasColumnType("text");
             Property(p => p.Inactive).IsRequired();
 
             // children

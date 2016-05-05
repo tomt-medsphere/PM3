@@ -20,7 +20,7 @@ namespace PM3.Model.Models
         public DateTime ReceivedDate { get; set; }
         public string PaymentFormId { get; set; }
         public string PracticeSiteId { get; set; }
-        public string ClosingRunId { get; set; }
+        public int? ClosingRunId { get; set; }
         public string PostingPeriodId { get; set; }
 
         // parents
@@ -34,5 +34,6 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<EDI835> EDI835s { get; set; }
+        public virtual List<TXMaster> TXMasters { get; set; }
     }
 }

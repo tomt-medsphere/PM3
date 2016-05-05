@@ -42,6 +42,7 @@ namespace PM3.Model.Models
         public virtual USPSState RemitUSPSState { get; set; }
         public virtual USPSCountry USPSCountry { get; set; }
         public virtual USPSCountry RemitUSPSCountry { get; set; }
+        public virtual TaxonomyCode TaxonomyCode { get; set; }
 
         // children
         public virtual List<PracticePhone> PracticePhones { get; set; }

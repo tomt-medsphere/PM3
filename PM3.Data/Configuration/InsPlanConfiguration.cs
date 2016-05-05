@@ -43,7 +43,7 @@ namespace PM3.Data.Configuration
             Property(p => p.MSPTypeId).IsOptional().HasMaxLength(5);
             Property(p => p.EDICOBLevelId).IsRequired().HasMaxLength(1);
             Property(p => p.UseHCPCSL2).IsRequired();
-            Property(p => p.Note).IsOptional().HasColumnType("longtext");
+            Property(p => p.Note).IsOptional().HasColumnType("text");
             Property(p => p.Inactive).IsRequired();
 
             // parents

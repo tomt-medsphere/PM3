@@ -17,8 +17,8 @@ namespace PM3.Data.Configuration
             Property(p => p.EndDate).IsOptional();
 
             // children
-            HasMany(c => c.TX).WithOptional(c => c.CAGCode);
-            HasMany(c => c.TXCAS).WithRequired(c => c.CAGCode);
+            HasMany(c => c.TXs).WithOptional(c => c.CAGCode);
+            HasMany(c => c.TXCASs).WithRequired(c => c.CAGCode);
         }
     }
 }

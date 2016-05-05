@@ -11,7 +11,7 @@ namespace PM3.Model.Models
         public DateTime? EndDate { get; set; }
 
         // children
-        public virtual List<TX> TX { get; set; }
-        public virtual List<TXCAS> TXCAS { get; set; }
+        public virtual List<TX> TXs { get; set; }
+        public virtual List<TXCAS> TXCASs { get; set; }
     }
 }

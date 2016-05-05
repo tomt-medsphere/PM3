@@ -23,7 +23,7 @@ namespace PM3.Data.Configuration
             Property(p => p.MemberId).IsOptional().HasMaxLength(10);
             Property(p => p.StartDate).IsOptional();
             Property(p => p.EndDate).IsOptional();
-            Property(p => p.Note).IsOptional().HasColumnType("longtext");
+            Property(p => p.Note).IsOptional().HasColumnType("text");
             Property(p => p.Sequence).IsRequired();
             Property(p => p.Inactive).IsRequired();
 

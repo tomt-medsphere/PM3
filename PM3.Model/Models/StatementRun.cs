@@ -14,6 +14,9 @@ namespace PM3.Model.Models
         // parents
         public virtual StatementRunStatus StatementRunStatus { get; set; }
         public virtual User User { get; set; }
+
+        // children
         public List<EDISessionStep> EDISessionSteps { get; set; }
+        public List<StatementRunDetail> StatementRunDetails { get; set; }
     }
 }

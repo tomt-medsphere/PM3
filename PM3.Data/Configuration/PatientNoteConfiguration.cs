@@ -22,7 +22,7 @@ namespace PM3.Data.Configuration
             Property(p => p.Flash).IsRequired();
             Property(p => p.Stop).IsRequired();
             Property(p => p.Statement).IsRequired();
-            Property(p => p.Note).IsOptional().HasColumnType("longtext");
+            Property(p => p.Note).IsOptional().HasColumnType("text");
             Property(p => p.CreatedDateTIme).IsRequired();
             Property(p => p.CreatedUserId).IsRequired().HasMaxLength(255);
             Property(p => p.AssignedUserId).IsOptional().HasMaxLength(255);

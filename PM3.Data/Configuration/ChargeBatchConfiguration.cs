@@ -31,6 +31,7 @@ namespace PM3.Data.Configuration
             HasRequired(p => p.User).WithMany(p => p.ChargeBatches).HasForeignKey(p => p.UserId).WillCascadeOnDelete(false);
             HasOptional(p => p.PracticeSite).WithMany(p => p.ChargeBatches).HasForeignKey(p => p.PracticeSiteId).WillCascadeOnDelete(false);
             HasOptional(p => p.PostingPeriod).WithMany(p => p.ChargeBatches).HasForeignKey(p => p.PostingPeriodId).WillCascadeOnDelete(false);
+            HasOptional(p => p.ClosingRun).WithMany(p => p.ChargeBatches).HasForeignKey(p => p.ClosingRunId).WillCascadeOnDelete(false);
 
             // children
             HasMany(c => c.Charges).WithRequired(c => c.ChargeBatch);

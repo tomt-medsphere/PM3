@@ -17,6 +17,7 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<CARAction> CARActions { get; set; }
-
+        public virtual List<TX> TXs { get; set; }
+        public virtual List<TXBatch> TXBatches { get; set; }
     }
 }

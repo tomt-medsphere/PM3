@@ -10,7 +10,7 @@ namespace PM3.Data.Configuration
             ToTable("CARCode");
             HasKey(p => p.CARCodeId);
             Property(p => p.CARCodeId).IsRequired().HasMaxLength(10);
-            Property(p => p.Description).IsRequired().HasColumnType("longtext");
+            Property(p => p.Description).IsRequired().HasColumnType("text");
             Property(p => p.StartDate).IsRequired();
 
             // children

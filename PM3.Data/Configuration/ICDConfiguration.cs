@@ -21,7 +21,7 @@ namespace PM3.Data.Configuration
             Property(p => p.Version).IsRequired().HasMaxLength(10);
             Property(p => p.Year).IsRequired();
             Property(p => p.FurtherSpecified).IsRequired();
-            Property(p => p.Description).IsRequired().HasColumnType("longtext");
+            Property(p => p.Description).IsRequired().HasColumnType("text");
             Property(p => p.MediumDescription).IsRequired().HasMaxLength(60);
             Property(p => p.MediumDescription).IsRequired().HasMaxLength(30);
 

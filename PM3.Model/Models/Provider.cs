@@ -18,10 +18,14 @@ namespace PM3.Model.Models
         public string Note { get; set; }
         public bool Inactive { get; set; }
 
+        // parents
+        public virtual Suffix Suffix { get; set; }
+
         // children
         public virtual List<ChargeService> RenderingChargeServices { get; set; }
         public virtual List<ChargeService> SupervisingChargeServices { get; set; }
         public virtual List<EDI270> EDI270s { get; set; }
         public List<Patient> Patients { get; set; }
+        public virtual List<TX> TXs { get; set; }
     }
 }

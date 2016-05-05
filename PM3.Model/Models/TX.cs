@@ -18,7 +18,7 @@ namespace PM3.Model.Models
         public string HCPCSId { get; set; }
         public decimal Units { get; set; }
         public string Note { get; set; }
-        public string Icn { get; set; }
+        public string ICN { get; set; }
         public bool TXClosed { get; set; }
         public string CAGCodeId { get; set; }
         public string CARCodeId { get; set; }
@@ -40,6 +40,6 @@ namespace PM3.Model.Models
 
         // children
         public virtual List<TXHCPCSModifier> TXHCPCSModifiers { get; set; }
-        public virtual List<TXCAS> TXCAS { get; set; }
+        public virtual List<TXCAS> TXCASs { get; set; }
     }
 }

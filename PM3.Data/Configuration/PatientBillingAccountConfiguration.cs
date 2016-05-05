@@ -20,13 +20,13 @@ namespace PM3.Data.Configuration
             Property(p => p.PatientBillingAccountId).IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             Property(p => p.PatientId).IsRequired();
             Property(p => p.BillingAccountId).IsRequired();
-            Property(p => p.RelationshipCodeId).IsOptional().HasMaxLength(2);
+            Property(p => p.RelationshipCodeId).IsRequired().HasMaxLength(2);
             Property(p => p.Sequence).IsRequired();
 
             // parents
             HasRequired(p => p.BillingAccount).WithMany(p => p.PatientBillingAccounts).HasForeignKey(p => p.BillingAccountId).WillCascadeOnDelete(false);
             HasRequired(p => p.Patient).WithMany(p => p.PatientBillingAccounts).HasForeignKey(p => p.PatientId).WillCascadeOnDelete(false);
-            HasOptional(p => p.RelationshipCode).WithMany(p => p.PatientBillingAccounts).HasForeignKey(p => p.RelationshipCodeId).WillCascadeOnDelete(false);
+            HasRequired(p => p.RelationshipCode).WithMany(p => p.PatientBillingAccounts).HasForeignKey(p => p.RelationshipCodeId).WillCascadeOnDelete(false);
 
         }
     }

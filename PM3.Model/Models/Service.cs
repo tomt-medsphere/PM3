@@ -9,7 +9,7 @@ namespace PM3.Model.Models
         public string HCPCSId { get; set; }
         public string HCPCSL2Id { get; set; }
         public string RevenueCodeId { get; set; }
-        public string Ndc { get; set; }
+        public string NDC { get; set; }
         public string Description { get; set; }
         public string StatementDescription { get; set; }
         public decimal StandardFee { get; set; }
@@ -39,5 +39,6 @@ namespace PM3.Model.Models
         // children
         public virtual List<ServiceHCPCSModifier> ServiceHCPCSModifiers { get; set; }
         public virtual List<ChargeService> ChargeServices { get; set; }
+        public virtual List<ServiceMacroDetail> ServiceMacroDetails { get; set; }
     }
 }

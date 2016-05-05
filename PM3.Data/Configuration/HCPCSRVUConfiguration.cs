@@ -19,7 +19,7 @@ namespace PM3.Data.Configuration
             Property(p => p.HCPCSModifierId).IsOptional().HasMaxLength(2);
             Property(p => p.Year).IsRequired();
             Property(p => p.Version).IsRequired().HasMaxLength(10);
-            Property(p => p.Description).IsRequired().HasColumnType("longtext");
+            Property(p => p.Description).IsRequired().HasColumnType("text");
             Property(p => p.Status).IsRequired().HasMaxLength(1);
             Property(p => p.WorkRVU).IsRequired().HasPrecision(18,2);
             Property(p => p.NonFacPracRVU).IsRequired().HasPrecision(18, 2);

@@ -11,5 +11,6 @@ namespace PM3.Model.Models
         // parents
         public virtual CMSSpeciality CMSSpeciality { get; set; }
         public List<ExtProvider> ExtProviders { get; set; }
+        public List<Practice> Practices { get; set; }
     }
 }
