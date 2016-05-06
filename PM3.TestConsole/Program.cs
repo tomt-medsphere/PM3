@@ -50,6 +50,26 @@ namespace PM3.TestConsole
                 {
                     Console.WriteLine($"ac: {aci.AccidentCodeId} - {aci.Description}");
                 }
+
+                Pm3Entities pe = new Pm3Entities();
+                PrepRule pr1 = new PrepRule {Description = "test1"};
+                pr1.RuleMessage = "test1";
+                pr1.Warning = false;
+                pr1.HardCoded = false;
+
+                PrepRule pr2 = new PrepRule();
+                pr2.Description = "test2";
+                pr2.RuleMessage = "test2";
+                pr2.Warning = false;
+                pr2.HardCoded = false;
+
+
+                pe.PrepRule.Add(pr1);
+                pe.PrepRule.Add(pr2);
+
+                pe.Commit();
+
+
             }
             // all done
             Console.WriteLine("Goodbye from PM3!");

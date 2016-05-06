@@ -34,7 +34,7 @@ namespace PM3.Data.Configuration
             Property(p => p.GuardianNote).IsOptional().HasColumnType("text");
             Property(p => p.ResidentialFacilityId).IsOptional().HasMaxLength(10);
             Property(p => p.EmployerId).IsOptional();
-            Property(p => p.AKA).IsRequired().HasMaxLength(255);
+            Property(p => p.AKA).IsOptional().HasMaxLength(255);
             Property(p => p.PreferredContactMethod).IsOptional().HasMaxLength(10);
             Property(p => p.MailingAddressStreet).IsOptional().HasMaxLength(55);
             Property(p => p.MailingAddressOther).IsOptional().HasMaxLength(55);

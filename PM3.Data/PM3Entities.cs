@@ -19,6 +19,7 @@ namespace PM3.Data
         public DbSet<AccidentCode> AccidentCode { get; set; }
         public DbSet<DocumentCategory> DocumentCategory { get; set; }
         public DbSet<DocumentType> DocumentType { get; set; }
+        public DbSet<PrepRule> PrepRule { get; set; }
 
         public virtual void Commit()
         {
