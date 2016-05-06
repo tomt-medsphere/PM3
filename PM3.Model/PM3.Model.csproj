@@ -185,6 +185,7 @@
     <Compile Include="Models\TxMaster.cs" />
     <Compile Include="Models\TxMasterRARC.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserAccess.cs" />
     <Compile Include="Models\USPSCountry.cs" />
     <Compile Include="Models\USPSState.cs" />
     <Compile Include="Models\PaymentCategory.cs" />

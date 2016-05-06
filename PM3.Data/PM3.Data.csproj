@@ -180,8 +180,16 @@
     <Compile Include="Configuration\TOSConfiguration.cs" />
     <Compile Include="Configuration\TXBatchConfiguration.cs" />
     <Compile Include="Configuration\TXCASConfiguration.cs" />
+    <Compile Include="Configuration\TXCodeConfiguration.cs" />
     <Compile Include="Configuration\TXConfiguration.cs" />
+    <Compile Include="Configuration\TXHCPCSModifierConfiguration.cs" />
     <Compile Include="Configuration\TXMasterConfiguration.cs" />
+    <Compile Include="Configuration\TXMasterRARCConfiguration.cs" />
+    <Compile Include="Configuration\TXTypeConfiguration.cs" />
+    <Compile Include="Configuration\UserAccessConfiguration.cs" />
+    <Compile Include="Configuration\UserConfiguration.cs" />
+    <Compile Include="Configuration\USPSCountryConfiguration.cs" />
+    <Compile Include="Configuration\USPSStateConfiguration.cs" />
     <Compile Include="Infrastructure\DbFactory.cs" />
     <Compile Include="Infrastructure\Disposable.cs" />
     <Compile Include="Infrastructure\IDbFactory.cs" />

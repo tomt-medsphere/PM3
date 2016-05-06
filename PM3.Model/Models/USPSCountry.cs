@@ -5,7 +5,7 @@ namespace PM3.Model.Models
     public class USPSCountry
     {
         public string USPSCountryId { get; set; }
-        public string Description { get; set; }
+        public string Name { get; set; }
 
         // children
         public virtual List<Employer> Employers { get; set; }

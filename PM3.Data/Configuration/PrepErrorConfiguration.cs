@@ -22,14 +22,14 @@ namespace PM3.Data.Configuration
             Property(p => p.ChargeInsCoverageId).IsOptional();
             Property(p => p.ErrorNote).IsRequired().HasMaxLength(255);
             Property(p => p.CorrectedDateTime).IsOptional();
-            Property(p => p.UserId).IsRequired();
+            Property(p => p.UserId).IsOptional();
             Property(p => p.OnDemand).IsRequired();
 
             // parents
             HasRequired(p => p.Charge).WithMany(p => p.PrepErrors).HasForeignKey(p => p.ChargeId).WillCascadeOnDelete(false);
             HasOptional(p => p.ChargeService).WithMany(p => p.PrepErrors).HasForeignKey(p => p.ChargeServiceId).WillCascadeOnDelete(false);
             HasOptional(p => p.ChargeInsCoverage).WithMany(p => p.PrepErrors).HasForeignKey(p => p.ChargeInsCoverageId).WillCascadeOnDelete(false);
-            HasRequired(p => p.User).WithMany(p => p.PrepErrors).HasForeignKey(p => p.UserId).WillCascadeOnDelete(false);
+            HasOptional(p => p.User).WithMany(p => p.PrepErrors).HasForeignKey(p => p.UserId).WillCascadeOnDelete(false);
         }
     }
 }

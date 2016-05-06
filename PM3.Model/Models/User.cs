@@ -1,24 +1,22 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace PM3.Model.Models
 {
     public class User
     {
         public string UserId { get; set; }
+        public int UserIdInt { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string SuffixId { get; set; }
-        public bool Administrator { get; set; }
-        public bool PracticeTables { get; set; }
-        public bool Scheduling { get; set; }
-        public bool Encounters { get; set; }
-        public bool Payments { get; set; }
-        public bool Closing { get; set; }
         public string Password { get; set; }
         public bool Inactive { get; set; }
-        public bool Management { get; set; }
-        public bool PlanProfilesExpert { get; set; }
+        public DateTime LastLogIn { get; set; }
+        public DateTime LastLogOut { get; set; }
+        public DateTime PasswordExpires { get; set; }
+        public bool UserLockedOut { get; set; }
 
         // parents
         public virtual Suffix Suffix { get; set; }
@@ -31,6 +29,7 @@ namespace PM3.Model.Models
         public virtual List<EDI270> EDI270s { get; set; }
         public virtual List<EDI277STCAction> EDI277Actions { get; set; }
         public virtual List<EDIInbox> EDIInboxes { get; set; }
+        public virtual List<EDISession> EDISessions { get; set; }
         public virtual List<PatientNote> CreatedPatientNotes { get; set; }
         public virtual List<PatientNote> AssignedPatientNotes { get; set; }
         public virtual List<PostingPeriod> CreatedPostingPeriods { get; set; }
@@ -41,5 +40,6 @@ namespace PM3.Model.Models
         public virtual List<StatementRun> StatementRuns { get; set; }
         public virtual List<TX> TXs { get; set; }
         public virtual List<TXBatch> TXBatches { get; set; }
+        public virtual List<UserAccess> UserAccesses { get; set; }
     }
 }
